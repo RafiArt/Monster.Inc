@@ -1,0 +1,1171 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 6</name>
+    <events>
+        <variable constant="0" name="gems" sid="1937680740802761" static="0" type="number">10</variable>
+        <variable constant="0" name="bintang" sid="6875438513525869" static="0" type="number">0</variable>
+        <event-block sid="3468006217870861">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="1173814811806215" type="System" />
+            </conditions>
+            <actions>
+                <action id="-4" name="Set layer visible" sid="2576233172744788" type="System">
+                    <param id="0" name="Layer">&quot;Popup&quot;</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+                <action id="33" name="Stop all" sid="5012601663534297" type="Audio" />
+            </actions>
+            <sub-events>
+                <event-block sid="2751633165013295">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="4755530589567952" type="System">
+                            <param id="0" name="Variable">sound</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;on&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="1715163573562322" type="Audio">
+                            <param id="0" name="Audio file">MattOglseby - 1</param>
+                            <param id="2" name="Loop">1</param>
+                            <param id="3" name="Volume">-10</param>
+                            <param id="1" name="Tag (optional)">&quot;music&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="6631537680919887">
+            <conditions>
+                <condition id="4" name="Is touching object" sid="4829143862003162" type="Touch">
+                    <param id="0" name="Object">Sprite21</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="7" name="Simulate control" sid="6992511382222154" type="playerBlue_stand">
+                    <param id="0" name="Control">1</param>
+                </action>
+                <action id="4" name="Set animation" sid="8092928638378844" type="playerBlue_stand">
+                    <param id="0" name="Animation">&quot;jalan&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="7" name="Set mirrored" sid="1502472171311467" type="playerBlue_stand">
+                    <param id="0" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5227361866512072">
+            <conditions>
+                <condition id="4" name="Is touching object" sid="2909169522341153" type="Touch">
+                    <param id="0" name="Object">Sprite20</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="7" name="Simulate control" sid="4233463630380087" type="playerBlue_stand">
+                    <param id="0" name="Control">0</param>
+                </action>
+                <action id="4" name="Set animation" sid="7499378482668255" type="playerBlue_stand">
+                    <param id="0" name="Animation">&quot;jalan&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="7" name="Set mirrored" sid="1277006469138415" type="playerBlue_stand">
+                    <param id="0" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6036415356210971">
+            <conditions>
+                <condition id="4" name="Is touching object" sid="9834460154066622" type="Touch">
+                    <param id="0" name="Object">Sprite23</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="7" name="Simulate control" sid="384540664535764" type="playerBlue_stand">
+                    <param id="0" name="Control">2</param>
+                </action>
+                <action id="4" name="Set animation" sid="7048459369789083" type="playerBlue_stand">
+                    <param id="0" name="Animation">&quot;lompat&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2457538879407878">
+            <conditions>
+                <condition behavior="Platform" id="7" name="On stopped" sid="9490427269732451" type="playerBlue_stand" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="7678200575848076" type="playerBlue_stand">
+                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5958412434660925">
+            <conditions>
+                <condition id="3" name="On touched object" sid="8758299015404857" type="Touch">
+                    <param id="0" name="Object">Sprite22</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="4678250652372477" type="playerBlue_stand">
+                    <param id="0" name="Object">Sprite7</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="-16" name="Wait" sid="7270212686678382" type="System">
+                    <param id="0" name="Seconds">1.0</param>
+                </action>
+                <action id="-9" name="Destroy" sid="1926501150946079" type="Sprite7" />
+            </actions>
+        </event-block>
+        <event-block sid="5673588953290488">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="2499556429932055" type="playerBlue_stand">
+                    <param id="0" name="Object">enemyFloating_</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Flash" id="0" name="Flash" sid="5920698728843186" type="playerBlue_stand">
+                    <param id="0" name="&apos;On&apos; time">0.2</param>
+                    <param id="1" name="&apos;Off&apos; time">0.2</param>
+                    <param id="2" name="Duration">1.0</param>
+                </action>
+                <action id="0" name="Call function" sid="3449008322388844" type="Function">
+                    <param id="0" name="Name">&quot;bunuh&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+                <action id="-12" name="Subtract from" sid="8195731760424432" type="playerBlue_stand">
+                    <param id="0" name="Instance variable">heart</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-10" name="Add to" sid="1884338570338564" type="System">
+                    <param id="0" name="Variable">heart</param>
+                    <param id="1" name="Value">-1</param>
+                </action>
+                <action id="0" name="Set text" sid="3040625648580884" type="Text3">
+                    <param id="0" name="Text">&quot;hear =&quot;&amp;heart</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4046894316271864">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="9638529900085125" type="playerBlue_stand">
+                    <param id="0" name="Object">enemyFlying_</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Flash" id="0" name="Flash" sid="3328795306561228" type="playerBlue_stand">
+                    <param id="0" name="&apos;On&apos; time">0.2</param>
+                    <param id="1" name="&apos;Off&apos; time">0.2</param>
+                    <param id="2" name="Duration">1.0</param>
+                </action>
+                <action id="0" name="Call function" sid="7802397458493023" type="Function">
+                    <param id="0" name="Name">&quot;bunuh&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+                <action id="-12" name="Subtract from" sid="5270022683835209" type="playerBlue_stand">
+                    <param id="0" name="Instance variable">heart</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-10" name="Add to" sid="835387368585743" type="System">
+                    <param id="0" name="Variable">heart</param>
+                    <param id="1" name="Value">-1</param>
+                </action>
+                <action id="0" name="Set text" sid="4470483730686582" type="Text3">
+                    <param id="0" name="Text">&quot;hear =&quot;&amp;heart</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7431665156324532">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="2982192024471952" type="playerBlue_stand">
+                    <param id="0" name="Object">enemySpikey_</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Flash" id="0" name="Flash" sid="1314404543210184" type="playerBlue_stand">
+                    <param id="0" name="&apos;On&apos; time">0.2</param>
+                    <param id="1" name="&apos;Off&apos; time">0.2</param>
+                    <param id="2" name="Duration">1.0</param>
+                </action>
+                <action id="0" name="Call function" sid="6698217138172538" type="Function">
+                    <param id="0" name="Name">&quot;bunuh&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+                <action id="-12" name="Subtract from" sid="3530398056218248" type="playerBlue_stand">
+                    <param id="0" name="Instance variable">heart</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-10" name="Add to" sid="6089532961313742" type="System">
+                    <param id="0" name="Variable">heart</param>
+                    <param id="1" name="Value">-1</param>
+                </action>
+                <action id="0" name="Set text" sid="3154114860504788" type="Text3">
+                    <param id="0" name="Text">&quot;hear =&quot;&amp;heart</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3471755336095048">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="5321780912453532" type="playerBlue_stand">
+                    <param id="0" name="Object">slimePurple</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Flash" id="0" name="Flash" sid="6437701464783219" type="playerBlue_stand">
+                    <param id="0" name="&apos;On&apos; time">0.2</param>
+                    <param id="1" name="&apos;Off&apos; time">0.2</param>
+                    <param id="2" name="Duration">1.0</param>
+                </action>
+                <action id="0" name="Call function" sid="8361557588987636" type="Function">
+                    <param id="0" name="Name">&quot;bunuh&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+                <action id="-12" name="Subtract from" sid="5057693477352266" type="playerBlue_stand">
+                    <param id="0" name="Instance variable">heart</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-10" name="Add to" sid="2971911932846901" type="System">
+                    <param id="0" name="Variable">heart</param>
+                    <param id="1" name="Value">-1</param>
+                </action>
+                <action id="0" name="Set text" sid="3938348146355132" type="Text3">
+                    <param id="0" name="Text">&quot;hear =&quot;&amp;heart</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7147563155414143">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="8369966930224061" type="playerBlue_stand">
+                    <param id="0" name="Object">enemySwimming_</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Flash" id="0" name="Flash" sid="5741007549591465" type="playerBlue_stand">
+                    <param id="0" name="&apos;On&apos; time">0.2</param>
+                    <param id="1" name="&apos;Off&apos; time">0.2</param>
+                    <param id="2" name="Duration">1.0</param>
+                </action>
+                <action id="0" name="Call function" sid="497893001274449" type="Function">
+                    <param id="0" name="Name">&quot;bunuh&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+                <action id="-12" name="Subtract from" sid="7299732306258524" type="playerBlue_stand">
+                    <param id="0" name="Instance variable">heart</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-10" name="Add to" sid="822088008749242" type="System">
+                    <param id="0" name="Variable">heart</param>
+                    <param id="1" name="Value">-1</param>
+                </action>
+                <action id="0" name="Set text" sid="6937629099287427" type="Text3">
+                    <param id="0" name="Text">&quot;hear =&quot;&amp;heart</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5461055578436841">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="4172248221715849" type="playerBlue_stand">
+                    <param id="0" name="Object">enemyWalking_</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Flash" id="0" name="Flash" sid="3264876561187334" type="playerBlue_stand">
+                    <param id="0" name="&apos;On&apos; time">0.2</param>
+                    <param id="1" name="&apos;Off&apos; time">0.2</param>
+                    <param id="2" name="Duration">1.0</param>
+                </action>
+                <action id="0" name="Call function" sid="7445535136134474" type="Function">
+                    <param id="0" name="Name">&quot;bunuh&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+                <action id="-12" name="Subtract from" sid="3205000687361266" type="playerBlue_stand">
+                    <param id="0" name="Instance variable">heart</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-10" name="Add to" sid="9149314357887975" type="System">
+                    <param id="0" name="Variable">heart</param>
+                    <param id="1" name="Value">-1</param>
+                </action>
+                <action id="0" name="Set text" sid="5846248281379494" type="Text3">
+                    <param id="0" name="Text">&quot;hear =&quot;&amp;heart</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4519347129162291">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="5224083001362021" type="playerBlue_stand">
+                    <param id="0" name="Object">barnacle</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Flash" id="0" name="Flash" sid="7705010836407445" type="playerBlue_stand">
+                    <param id="0" name="&apos;On&apos; time">0.2</param>
+                    <param id="1" name="&apos;Off&apos; time">0.2</param>
+                    <param id="2" name="Duration">1.0</param>
+                </action>
+                <action id="0" name="Call function" sid="2313709531648057" type="Function">
+                    <param id="0" name="Name">&quot;bunuh&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+                <action id="-12" name="Subtract from" sid="7961897556998885" type="playerBlue_stand">
+                    <param id="0" name="Instance variable">heart</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-10" name="Add to" sid="2618618180608461" type="System">
+                    <param id="0" name="Variable">heart</param>
+                    <param id="1" name="Value">-1</param>
+                </action>
+                <action id="0" name="Set text" sid="4473140117668791" type="Text3">
+                    <param id="0" name="Text">&quot;hear =&quot;&amp;heart</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8734007096280396">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="3348098883509284" type="playerBlue_stand">
+                    <param id="0" name="Object">fishBlue</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Flash" id="0" name="Flash" sid="2625531804555667" type="playerBlue_stand">
+                    <param id="0" name="&apos;On&apos; time">0.2</param>
+                    <param id="1" name="&apos;Off&apos; time">0.2</param>
+                    <param id="2" name="Duration">1.0</param>
+                </action>
+                <action id="0" name="Call function" sid="4966704870938194" type="Function">
+                    <param id="0" name="Name">&quot;bunuh&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+                <action id="-12" name="Subtract from" sid="6166387647711233" type="playerBlue_stand">
+                    <param id="0" name="Instance variable">heart</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-10" name="Add to" sid="1749220943301699" type="System">
+                    <param id="0" name="Variable">heart</param>
+                    <param id="1" name="Value">-1</param>
+                </action>
+                <action id="0" name="Set text" sid="2745953160057791" type="Text3">
+                    <param id="0" name="Text">&quot;hear =&quot;&amp;heart</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="550670243436296">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="345028980320268" type="playerBlue_stand">
+                    <param id="0" name="Object">fly</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Flash" id="0" name="Flash" sid="2471032382739393" type="playerBlue_stand">
+                    <param id="0" name="&apos;On&apos; time">0.2</param>
+                    <param id="1" name="&apos;Off&apos; time">0.2</param>
+                    <param id="2" name="Duration">1.0</param>
+                </action>
+                <action id="0" name="Call function" sid="9009393630764389" type="Function">
+                    <param id="0" name="Name">&quot;bunuh&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+                <action id="-12" name="Subtract from" sid="6277115826760632" type="playerBlue_stand">
+                    <param id="0" name="Instance variable">heart</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-10" name="Add to" sid="9597406472453194" type="System">
+                    <param id="0" name="Variable">heart</param>
+                    <param id="1" name="Value">-1</param>
+                </action>
+                <action id="0" name="Set text" sid="8038673201654666" type="Text3">
+                    <param id="0" name="Text">&quot;hear =&quot;&amp;heart</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5147683750842512">
+            <conditions>
+                <condition id="7" name="Is mirrored" sid="4874341144283385" type="playerBlue_stand" />
+            </conditions>
+            <actions>
+                <action id="-8" name="Set angle" sid="8719798367200101" type="Sprite7">
+                    <param id="0" name="Angle">180</param>
+                </action>
+                <action id="7" name="Set mirrored" sid="1652013884439968" type="Sprite7">
+                    <param id="0" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="161812190777686">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="6560888532223212" type="playerBlue_stand">
+                    <param id="0" name="Object">blueGem</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="536957629783278" type="blueGem" />
+                <action id="-10" name="Add to" sid="6967889304130334" type="System">
+                    <param id="0" name="Variable">gem</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="0" name="Set text" sid="2408447734117688" type="Text2">
+                    <param id="0" name="Text">&quot;skor =&quot;&amp;gem</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="5624535268698436">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="1021684561945185" type="System">
+                            <param id="0" name="Variable">music</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;on&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="8470778487846321" type="Audio">
+                            <param id="0" name="Audio file">Collect Gem</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">-10</param>
+                            <param id="1" name="Tag (optional)">&quot;sound&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="1316851168281953">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="7951961499108304" type="playerBlue_stand">
+                    <param id="0" name="Instance variable">heart</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="5714382902813451">
+                    <conditions>
+                        <condition id="-4" name="Trigger once while true" sid="8986844292660565" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="8769921870192514" type="playerBlue_stand">
+                            <param id="0" name="Animation">&quot;mati&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action behavior="Platform" id="11" name="Set enabled" sid="6709337430765635" type="playerBlue_stand">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action id="0" name="Call function" sid="5767115690625641" type="Function">
+                            <param id="0" name="Name">&quot;kalah&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                        <action id="-16" name="Wait" sid="8867525538846572" type="System">
+                            <param id="0" name="Seconds">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="4716371750935051" type="Button_3">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="2038461624956489" type="System">
+                            <param id="0" name="Layer">&quot;Popup&quot;</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="7524141082266112">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="4500013316677057" type="Sprite7">
+                    <param id="0" name="Object">enemyWalking_</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Call function" sid="6996638047949343" type="Function">
+                    <param id="0" name="Name">&quot;hit&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+                <action id="4" name="Set animation" sid="2373280048171165" type="enemyWalking_">
+                    <param id="0" name="Animation">&quot;mati&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="6604134950558507" type="System">
+                    <param id="0" name="Seconds">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="7522681693975119" type="enemyWalking_">
+                    <param id="0" name="Object">Sprite10</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="-2" name="Set Y" sid="7162657582914523" type="enemyWalking_">
+                    <param id="0" name="Y">710</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1378153369181586">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="6739796797498511" type="Sprite7">
+                    <param id="0" name="Object">enemyFloating_</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Call function" sid="7566192770911824" type="Function">
+                    <param id="0" name="Name">&quot;hit&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+                <action id="4" name="Set animation" sid="1735685256941761" type="enemyFloating_">
+                    <param id="0" name="Animation">&quot;mati&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="3637855205426687" type="System">
+                    <param id="0" name="Seconds">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="4147900218199154" type="enemyFloating_">
+                    <param id="0" name="Object">Sprite10</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="-2" name="Set Y" sid="1625490120071648" type="enemyFloating_">
+                    <param id="0" name="Y">710</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8955817044983185">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="9045950647671411" type="Sprite7">
+                    <param id="0" name="Object">enemyFlying_</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Call function" sid="1439951530314785" type="Function">
+                    <param id="0" name="Name">&quot;hit&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+                <action id="4" name="Set animation" sid="5004522974591302" type="enemyFlying_">
+                    <param id="0" name="Animation">&quot;mati&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="5497936393201982" type="System">
+                    <param id="0" name="Seconds">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="5237861444266704" type="enemyFlying_">
+                    <param id="0" name="Object">Sprite10</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="-2" name="Set Y" sid="7173736178002265" type="enemyFlying_">
+                    <param id="0" name="Y">710</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1089305417283866">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="6513651662974373" type="Sprite7">
+                    <param id="0" name="Object">enemySpikey_</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Call function" sid="6433548151382805" type="Function">
+                    <param id="0" name="Name">&quot;hit&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+                <action id="4" name="Set animation" sid="6517558294654235" type="enemySpikey_">
+                    <param id="0" name="Animation">&quot;mati&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="2797603135063248" type="System">
+                    <param id="0" name="Seconds">0.2</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="3050006514271362" type="enemySpikey_">
+                    <param id="0" name="Object">Sprite10</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="-2" name="Set Y" sid="6742245375501136" type="enemySpikey_">
+                    <param id="0" name="Y">900</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7712292553767348">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="1293803433363772" type="Sprite7">
+                    <param id="0" name="Object">slimePurple</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Call function" sid="1720973394560372" type="Function">
+                    <param id="0" name="Name">&quot;hit&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+                <action id="4" name="Set animation" sid="8437890201390596" type="slimePurple">
+                    <param id="0" name="Animation">&quot;mati&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="4931010987250747" type="System">
+                    <param id="0" name="Seconds">0.2</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="5604431253224391" type="slimePurple">
+                    <param id="0" name="Object">Sprite10</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="-2" name="Set Y" sid="6813141834543028" type="slimePurple">
+                    <param id="0" name="Y">900</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1006056100948256">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="8175868201809272" type="Sprite7">
+                    <param id="0" name="Object">barnacle</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Call function" sid="3350451698633746" type="Function">
+                    <param id="0" name="Name">&quot;hit&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+                <action id="4" name="Set animation" sid="5056105992902335" type="barnacle">
+                    <param id="0" name="Animation">&quot;mati&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="9332208006112878" type="System">
+                    <param id="0" name="Seconds">0.2</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="507177994314675" type="barnacle">
+                    <param id="0" name="Object">Sprite10</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="-2" name="Set Y" sid="8072831560403155" type="barnacle">
+                    <param id="0" name="Y">900</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2448016883189266">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="2221653213439319" type="Sprite7">
+                    <param id="0" name="Object">fishBlue</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Call function" sid="2577068689612484" type="Function">
+                    <param id="0" name="Name">&quot;hit&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+                <action id="4" name="Set animation" sid="241969159802292" type="fishBlue">
+                    <param id="0" name="Animation">&quot;mati&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="109565866645583" type="System">
+                    <param id="0" name="Seconds">0.2</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="6182214484942098" type="fishBlue">
+                    <param id="0" name="Object">Sprite10</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="-2" name="Set Y" sid="5451000402609684" type="fishBlue">
+                    <param id="0" name="Y">900</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4677994751009188">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="9830085071385979" type="Sprite7">
+                    <param id="0" name="Object">fly</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Call function" sid="7124890279260192" type="Function">
+                    <param id="0" name="Name">&quot;hit&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+                <action id="4" name="Set animation" sid="4431393830281437" type="fly">
+                    <param id="0" name="Animation">&quot;mati&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="1090845133024281" type="System">
+                    <param id="0" name="Seconds">0.2</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="6348476683075928" type="fly">
+                    <param id="0" name="Object">Sprite10</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="-2" name="Set Y" sid="4331274537923964" type="fly">
+                    <param id="0" name="Y">900</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8301408267750186">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="7394945412330115" type="playerBlue_stand">
+                    <param id="0" name="Object">Sprite16</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="7794364621375415" type="Sprite16" />
+                <action id="-11" name="Add to" sid="2974471044592955" type="playerBlue_stand">
+                    <param id="0" name="Instance variable">key</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="5" name="Set frame" sid="2793953932289467" type="key">
+                    <param id="0" name="Frame number">playerBlue_stand.key</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="1634187271453923">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="4286640424398226" type="System">
+                            <param id="0" name="Variable">music</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;on&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="4157669296965045" type="Audio">
+                            <param id="0" name="Audio file">Collect Key</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">-10</param>
+                            <param id="1" name="Tag (optional)">&quot;sound&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="5099733687967249">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="9079355061570284" type="playerBlue_stand">
+                    <param id="0" name="Object">doorGreen_lock</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="8244308878675427" type="doorGreen_lock">
+                    <param id="0" name="Frame number">0</param>
+                </action>
+                <action id="5" name="Set frame" sid="6079969155063741" type="doorGreen_top">
+                    <param id="0" name="Frame number">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4548181538665141">
+            <conditions>
+                <condition id="3" name="Compare frame" sid="4314342189312907" type="key">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Number">3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="6404678866444512" type="doorGreen_lock">
+                    <param id="0" name="Frame number">1</param>
+                </action>
+                <action id="5" name="Set frame" sid="7248982078490837" type="doorGreen_top">
+                    <param id="0" name="Frame number">1</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="5312243530464091">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="4610816729665177" type="playerBlue_stand">
+                            <param id="0" name="Object">doorGreen_lock</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="1283382044180403" type="doorGreen_lock">
+                            <param id="0" name="Frame number">1</param>
+                        </action>
+                        <action id="0" name="Call function" sid="8425039372672435" type="Function">
+                            <param id="0" name="Name">&quot;menang&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                        <action id="-16" name="Wait" sid="16765747855397" type="System">
+                            <param id="0" name="Seconds">0.2</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="8509971055951089" type="Button_3">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="9415465275874896" type="System">
+                            <param id="0" name="Layer">&quot;Popup&quot;</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="7836537706589207" type="gameover">
+                            <param id="0" name="Frame number">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="1096312536085814">
+            <conditions>
+                <condition id="0" name="On function" sid="9683051319048887" type="Function">
+                    <param id="0" name="Name">&quot;bunuh&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="5141761969754733">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="379306193574883" type="System">
+                            <param id="0" name="Variable">music</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;on&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="193556563641479" type="Audio">
+                            <param id="0" name="Audio file">EnemyHit</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">-10</param>
+                            <param id="1" name="Tag (optional)">&quot;sound&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="9013676490326627">
+            <conditions>
+                <condition id="0" name="On function" sid="1645971920530638" type="Function">
+                    <param id="0" name="Name">&quot;hit&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="4432108650015724">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="7931883050132752" type="System">
+                            <param id="0" name="Variable">music</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;on&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="5132735611602298" type="Audio">
+                            <param id="0" name="Audio file">Hit</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">-10</param>
+                            <param id="1" name="Tag (optional)">&quot;sound&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="8359802104917143">
+            <conditions>
+                <condition id="0" name="On function" sid="2702818491438934" type="Function">
+                    <param id="0" name="Name">&quot;kalah&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="6464432419691418">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="4462196491388063" type="System">
+                            <param id="0" name="Variable">music</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;on&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="4599134195600262" type="Audio">
+                            <param id="0" name="Audio file">Jingle Lose</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="288107881389975">
+            <conditions>
+                <condition id="0" name="On function" sid="8190237708123275" type="Function">
+                    <param id="0" name="Name">&quot;menang&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="3318863725182416">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="5883693572056432" type="System">
+                            <param id="0" name="Variable">music</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;on&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="6032247219215646" type="Audio">
+                            <param id="0" name="Audio file">Jingle Win</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="8160363519632554">
+            <conditions>
+                <condition id="17" name="On tap object" sid="1404816034188744" type="Touch">
+                    <param id="0" name="Object">Button_</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="68152253527701">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="3613092109299224" type="System">
+                            <param id="0" name="Variable">sound</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;on&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="6" name="Stop" sid="1469676494304855" type="Audio">
+                            <param id="0" name="Tag">&quot;music&quot;</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="5640520563060503" type="System">
+                            <param id="0" name="Seconds">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="2050172502276726" type="System">
+                            <param id="0" name="Variable">sound</param>
+                            <param id="1" name="Value">&quot;off&quot;</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="5651862777743337" type="Button_">
+                            <param id="0" name="Frame number">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="4508701251768721">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="5508225947673992" type="System">
+                            <param id="0" name="Variable">sound</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;off&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="7028897380794365" type="Audio">
+                            <param id="0" name="Audio file">MattOglseby - 1</param>
+                            <param id="2" name="Loop">1</param>
+                            <param id="3" name="Volume">-10</param>
+                            <param id="1" name="Tag (optional)">&quot;music&quot;</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="1011829428615229" type="System">
+                            <param id="0" name="Seconds">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="4170158504193367" type="System">
+                            <param id="0" name="Variable">sound</param>
+                            <param id="1" name="Value">&quot;on&quot;</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="7668684447417554" type="Button_">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="4588550757822881">
+            <conditions>
+                <condition id="17" name="On tap object" sid="2285190179616428" type="Touch">
+                    <param id="0" name="Object">Button_2</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="2223101862477298">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="4639363158019873" type="System">
+                            <param id="0" name="Variable">music</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;on&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="6" name="Stop" sid="7749398872294748" type="Audio">
+                            <param id="0" name="Tag">&quot;sound&quot;</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="3824095739257025" type="System">
+                            <param id="0" name="Seconds">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="4563260932037799" type="System">
+                            <param id="0" name="Variable">music</param>
+                            <param id="1" name="Value">&quot;off&quot;</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="8992773369920224" type="Button_2">
+                            <param id="0" name="Frame number">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="9401096378990624">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="690281532311388" type="System">
+                            <param id="0" name="Variable">music</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;off&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Wait" sid="61168941975337" type="System">
+                            <param id="0" name="Seconds">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="1368853802252828" type="System">
+                            <param id="0" name="Variable">music</param>
+                            <param id="1" name="Value">&quot;on&quot;</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="6103190468489846" type="Button_2">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="9683879308615918">
+            <conditions>
+                <condition id="-4" name="Is outside layout" sid="9713737858903586" type="playerBlue_stand" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="1145303128676758">
+                    <conditions>
+                        <condition id="-4" name="Trigger once while true" sid="6763819414049406" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="5004991111061736" type="playerBlue_stand">
+                            <param id="0" name="Animation">&quot;mati&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="0" name="Call function" sid="7730041315187535" type="Function">
+                            <param id="0" name="Name">&quot;kalah&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                        <action id="-16" name="Wait" sid="8938104642175863" type="System">
+                            <param id="0" name="Seconds">1</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="663091603960372" type="System">
+                            <param id="0" name="Layer">&quot;Popup&quot;</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="8324367446324903">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="122846610788255" type="Sprite7">
+                    <param id="0" name="Object">enemySwimming_</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Call function" sid="7487931187355714" type="Function">
+                    <param id="0" name="Name">&quot;hit&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+                <action id="4" name="Set animation" sid="6219789309801116" type="enemySwimming_">
+                    <param id="0" name="Animation">&quot;mati&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="2997974377960634" type="System">
+                    <param id="0" name="Seconds">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="7703170754068821" type="enemySwimming_">
+                    <param id="0" name="Object">Sprite10</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="-2" name="Set Y" sid="7862639484013093" type="enemySwimming_">
+                    <param id="0" name="Y">710</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5637508671136203">
+            <conditions>
+                <condition id="-18" name="On created" sid="6378520670990413" type="Sprite10" />
+            </conditions>
+            <actions>
+                <action behavior="Bullet" id="3" name="Set angle of motion" sid="176141869432125" type="Sprite10">
+                    <param id="0" name="Angle">-90</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9217127588834753">
+            <conditions>
+                <condition id="-9" name="Layer is visible" sid="2723180587984886" type="System">
+                    <param id="0" name="Layer">&quot;Popup&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="1263973372193047">
+                    <conditions>
+                        <condition id="4" name="Is touching object" sid="724974037347945" type="Touch">
+                            <param id="0" name="Object">Sprite14</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Wait" sid="5959732370748898" type="System">
+                            <param id="0" name="Seconds">0.2</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="7812113313929218" type="Sprite14">
+                            <param id="0" name="Frame number">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="1869695783177674" type="System">
+                            <param id="0" name="Seconds">0.2</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="1727831519808041" type="Sprite14">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="1045531575864181" type="System">
+                            <param id="0" name="Layout">Layout 5</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="8187740014595267">
+                    <conditions>
+                        <condition id="4" name="Is touching object" sid="7569494186982044" type="Touch">
+                            <param id="0" name="Object">Button_3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Wait" sid="2317389729842387" type="System">
+                            <param id="0" name="Seconds">0.2</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="6457597700190389" type="Button_3">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="915856139173623" type="System">
+                            <param id="0" name="Seconds">0.2</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="7017436864044144" type="Button_3">
+                            <param id="0" name="Frame number">1</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="8305730697118547" type="System">
+                            <param id="0" name="Layout">Layout 5</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="5821576715012519">
+                    <conditions>
+                        <condition id="4" name="Is touching object" sid="6659632340267426" type="Touch">
+                            <param id="0" name="Object">Sprite13</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Wait" sid="3667742086336776" type="System">
+                            <param id="0" name="Seconds">0.2</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="9832645526499069" type="System">
+                            <param id="0" name="Variable">heart</param>
+                            <param id="1" name="Value">5</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="5296154482977445" type="Sprite13">
+                            <param id="0" name="Frame number">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="7272349876392454" type="System">
+                            <param id="0" name="Seconds">0.2</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="913189028656284" type="Sprite13">
+                            <param id="0" name="Frame number">1</param>
+                        </action>
+                        <action id="-26" name="Restart layout" sid="8484262673784985" type="System" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
+</c2eventsheet>

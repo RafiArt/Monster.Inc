@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>level</name>
+    <events>
+        <variable constant="0" name="level" sid="5537400298607036" static="0" type="number">1</variable>
+        <event-block sid="4946141007549332">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="8514347348587994" type="System" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="5650289584156752">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="1833866753683798" type="System">
+                            <param id="0" name="Variable">sound</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;on&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="9364176665740529" type="Audio">
+                            <param id="0" name="Audio file">MattOglseby - 1</param>
+                            <param id="2" name="Loop">1</param>
+                            <param id="3" name="Volume">-10</param>
+                            <param id="1" name="Tag (optional)">&quot;music&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="4080149039340131">
+            <conditions>
+                <condition id="17" name="On tap object" sid="1397191811914238" type="Touch">
+                    <param id="0" name="Object">Sprite37</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="4405206734131958" type="System">
+                    <param id="0" name="Layout">level1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5268616800259633">
+            <conditions>
+                <condition id="17" name="On tap object" sid="9328445936490822" type="Touch">
+                    <param id="0" name="Object">Sprite38</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="1529134731759213" type="System">
+                    <param id="0" name="Layout">level2</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6574301896223723">
+            <conditions>
+                <condition id="17" name="On tap object" sid="1176126425417921" type="Touch">
+                    <param id="0" name="Object">Sprite39</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="5195960896876186" type="System">
+                    <param id="0" name="Layout">level3</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3545007842997817">
+            <conditions>
+                <condition id="17" name="On tap object" sid="8709679205428934" type="Touch">
+                    <param id="0" name="Object">Sprite40</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="8688334260486254" type="System">
+                    <param id="0" name="Layout">level4</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="948064512503659">
+            <conditions>
+                <condition id="17" name="On tap object" sid="8329790606260045" type="Touch">
+                    <param id="0" name="Object">Sprite41</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="7934888062954845" type="System">
+                    <param id="0" name="Layout">level5</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8830347731387959">
+            <conditions>
+                <condition id="17" name="On tap object" sid="6473250325309311" type="Touch">
+                    <param id="0" name="Object">Sprite42</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="3649303261641044" type="System">
+                    <param id="0" name="Layout">level6</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2165819751629934">
+            <conditions>
+                <condition id="17" name="On tap object" sid="8799880812187342" type="Touch">
+                    <param id="0" name="Object">Button_</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="7919934069275062">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="6538985775758281" type="System">
+                            <param id="0" name="Variable">sound</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;on&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="6" name="Stop" sid="4677969440397853" type="Audio">
+                            <param id="0" name="Tag">&quot;music&quot;</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="6755898526708567" type="System">
+                            <param id="0" name="Seconds">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="2910903319141884" type="System">
+                            <param id="0" name="Variable">sound</param>
+                            <param id="1" name="Value">&quot;off&quot;</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="1233341821450231" type="Button_">
+                            <param id="0" name="Frame number">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="9834335369789559">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="8807713938174244" type="System">
+                            <param id="0" name="Variable">sound</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;off&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="4780619318297623" type="Audio">
+                            <param id="0" name="Audio file">MattOglseby - 1</param>
+                            <param id="2" name="Loop">1</param>
+                            <param id="3" name="Volume">-10</param>
+                            <param id="1" name="Tag (optional)">&quot;music&quot;</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="794389392868197" type="System">
+                            <param id="0" name="Seconds">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="4924040407667236" type="System">
+                            <param id="0" name="Variable">sound</param>
+                            <param id="1" name="Value">&quot;on&quot;</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="4451151593745105" type="Button_">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="9922900427581899">
+            <conditions>
+                <condition id="4" name="Is touching object" sid="2045626433542998" type="Touch">
+                    <param id="0" name="Object">Sprite82</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Wait" sid="2529287455184386" type="System">
+                    <param id="0" name="Seconds">0.2</param>
+                </action>
+                <action id="5" name="Set frame" sid="3464537711495095" type="Sprite82">
+                    <param id="0" name="Frame number">0</param>
+                </action>
+                <action id="-16" name="Wait" sid="4943958086100033" type="System">
+                    <param id="0" name="Seconds">0.2</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="9072024637544759" type="System">
+                    <param id="0" name="Layout">Layout 1</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

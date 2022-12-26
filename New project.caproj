@@ -1,0 +1,3310 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>New project</name>
+    <description></description>
+    <version>1.0.0.0</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>com.mycompany.myapp</app-id>
+    <unique-id>1z5g2tsb760b</unique-id>
+    <saved-with-version>22700</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
+        <plugin author="Scirra" id="Function" version="1">Function</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Spritefont2" version="1">Sprite font</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+        <plugin author="Scirra" id="Tilemap" version="1">Tilemap</plugin>
+        <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
+        <plugin author="Scirra" id="progressbar" version="1">Progress bar</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
+        <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
+        <behavior author="Scirra" id="Flash" version="1">Flash</behavior>
+        <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
+        <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
+        <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>1136</width>
+        <height>640</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Medium quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Construct 2 splash</prop>
+        <prop name="Orientations">Any</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="set3_background" sid="848574489087435">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="232356396521060" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\bahan\Platformer\Abstract Platformer\PNG\Backgrounds\set4_background.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="set3_tiles" sid="921705218738258">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="385753702786687" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.500805" original-source="D:\bahan\Platformer\Abstract Platformer\PNG\Backgrounds\set3_tiles.png">
+                        <collision-poly>
+                            <point x="0.100352" y="0.183575" />
+                            <point x="0.5" y="0.041868" />
+                            <point x="0.757923" y="0.442834" />
+                            <point x="1" y="0.499195" />
+                            <point x="0.877641" y="0.776167" />
+                            <point x="0.5" y="0.644122" />
+                            <point x="0.0228873" y="0.958132" />
+                            <point x="0" y="0.499195" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="set3_hills" sid="222131328467260">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="831585802935146" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\bahan\Platformer\Abstract Platformer\PNG\Backgrounds\set3_hills.png">
+                        <collision-poly>
+                            <point x="0.355236" y="0.720833" />
+                            <point x="0.749487" y="0.508333" />
+                            <point x="1" y="0.5" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="tileGreen_" sid="885259284108285">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="429119899751000">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="844638060744519" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\bahan\Platformer\Abstract Platformer\PNG\Tiles\Green tiles\tileGreen_03.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="tileGreen_2" sid="874007558361075">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="808144052673765" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\bahan\Platformer\Abstract Platformer\PNG\Tiles\Green tiles\tileGreen_05.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TiledBackground" sid="908843645230083">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="112715406012392">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="D:\bahan\Platformer\Abstract Platformer\PNG\Tiles\Green tiles\tileGreen_05.png" />
+        </object-type>
+        <object-type name="playerBlue_stand" sid="284052079853644">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="key" sid="576591564308573" type="number" />
+                <instance-variable name="heart" sid="133725012240994" type="number" />
+                <instance-variable name="bintang" sid="8355433001568261" type="number" />
+                <instance-variable name="gem" sid="7947075922834081" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Platform" sid="330363038547686">
+                    <behavior id="Platform" />
+                </behavior-type>
+                <behavior-type name="ScrollTo" sid="847375835125338">
+                    <behavior id="scrollto" />
+                </behavior-type>
+                <behavior-type name="Flash" sid="946367305192549">
+                    <behavior id="Flash" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="887857542843248" speed="5">
+                    <frame duration="1" hotspotX="0.511111" hotspotY="0.5" original-source="D:\bahan\Platformer\Abstract Platformer\PNG\Players\Player Blue\playerBlue_stand.png">
+                        <collision-poly>
+                            <point x="0.244444" y="0.203704" />
+                            <point x="0.488889" y="0" />
+                            <point x="0.733333" y="0.222222" />
+                            <point x="0.933333" y="0.5" />
+                            <point x="0.866667" y="0.981481" />
+                            <point x="0.488889" y="0.981481" />
+                            <point x="0.111111" y="0.944444" />
+                            <point x="0.0222222" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="3" loop="1" name="jalan" pingpong="0" repeatcount="1" repeatto="0" sid="503161330814115" speed="7">
+                    <frame duration="1" hotspotX="0.511111" hotspotY="0.5" original-source="D:\bahan\Platformer\Abstract Platformer\PNG\Players\Player Blue\playerBlue_walk1.png" />
+                    <frame duration="1" hotspotX="0.511111" hotspotY="0.5" original-source="D:\bahan\Platformer\Abstract Platformer\PNG\Players\Player Blue\playerBlue_walk2.png" />
+                    <frame duration="1" hotspotX="0.511111" hotspotY="0.5" original-source="D:\bahan\Platformer\Abstract Platformer\PNG\Players\Player Blue\playerBlue_walk3.png" />
+                </animation>
+                <animation framecount="4" loop="0" name="lompat" pingpong="0" repeatcount="1" repeatto="0" sid="321177441308123" speed="5">
+                    <frame duration="1" hotspotX="0.511111" hotspotY="0.5" original-source="D:\bahan\Platformer\Abstract Platformer\PNG\Players\Player Blue\playerBlue_up1.png" />
+                    <frame duration="1" hotspotX="0.511111" hotspotY="0.5" original-source="D:\bahan\Platformer\Abstract Platformer\PNG\Players\Player Blue\playerBlue_up2.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\bahan\Platformer\Abstract Platformer\PNG\Players\Player Blue\playerBlue_fall.png" />
+                    <frame duration="1" hotspotX="0.511111" hotspotY="0.5" original-source="D:\bahan\Platformer\Abstract Platformer\PNG\Players\Player Blue\playerBlue_up1.png" />
+                </animation>
+                <animation framecount="1" loop="0" name="mati" pingpong="0" repeatcount="1" repeatto="0" sid="571279642859460" speed="5">
+                    <frame duration="1" hotspotX="0.511111" hotspotY="0.510638" original-source="D:\bahan\Platformer\Abstract Platformer\PNG\Players\Player Blue\playerBlue_dead.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite" sid="694987984778748">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="718381883289274" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite2" sid="560917897825189">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="308013253657293">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="989334455634355" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\bahan\Platformer\Abstract Platformer\PNG\Tiles\Green tiles\tileGreen_15.png">
+                        <collision-poly>
+                            <point x="0.0625" y="0.0625" />
+                            <point x="0.5" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0.5" y="0.953125" />
+                            <point x="0.203125" y="0.796875" />
+                            <point x="0.015625" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Hitam_Kiri" sid="834233389728953">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="118521828747519" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="N:\!! BAHAN WORKSHOP GAME DEV\Construst 2\icon\Kontrol\Hitam_Kiri.png">
+                        <collision-poly>
+                            <point x="0.15" y="0.15" />
+                            <point x="0.5" y="0.0125" />
+                            <point x="0.85" y="0.15" />
+                            <point x="1" y="0.5" />
+                            <point x="0.85" y="0.85" />
+                            <point x="0.5" y="1" />
+                            <point x="0.15" y="0.85" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Hitam_Kanan" sid="270243931539145">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="413095951265698" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="N:\!! BAHAN WORKSHOP GAME DEV\Construst 2\icon\Kontrol\Hitam_Kanan.png">
+                        <collision-poly>
+                            <point x="0.15" y="0.15" />
+                            <point x="0.5" y="0.0125" />
+                            <point x="0.85" y="0.15" />
+                            <point x="1" y="0.5" />
+                            <point x="0.85" y="0.85" />
+                            <point x="0.5" y="1" />
+                            <point x="0.15" y="0.85" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Hitam_Atas" sid="874637914304978">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="863670432606695" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="N:\!! BAHAN WORKSHOP GAME DEV\Construst 2\icon\Kontrol\Hitam_Atas.png">
+                        <collision-poly>
+                            <point x="0.15" y="0.15" />
+                            <point x="0.5" y="0.0125" />
+                            <point x="0.85" y="0.15" />
+                            <point x="1" y="0.5" />
+                            <point x="0.85" y="0.85" />
+                            <point x="0.5" y="1" />
+                            <point x="0.15" y="0.85" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Hitam_Fire" sid="910404694666896">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="377844093704139" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="N:\!! BAHAN WORKSHOP GAME DEV\Construst 2\icon\Kontrol\Hitam_Fire.png">
+                        <collision-poly>
+                            <point x="0.15" y="0.15" />
+                            <point x="0.5" y="0.0125" />
+                            <point x="0.85" y="0.15" />
+                            <point x="1" y="0.5" />
+                            <point x="0.85" y="0.85" />
+                            <point x="0.5" y="1" />
+                            <point x="0.15" y="0.85" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Touch" sid="651313567154975">
+            <plugin id="Touch" />
+        </object-type>
+        <object-type name="Sprite3" sid="902186483257553">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="212730548402274">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="327783706800909" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\bahan\Platformer\Abstract Platformer\PNG\Tiles\Green tiles\tileGreen_16.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.5" y="0" />
+                            <point x="0.9375" y="0.0625" />
+                            <point x="0.984375" y="0.5" />
+                            <point x="0.796875" y="0.796875" />
+                            <point x="0.5" y="0.9375" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite4" sid="611566769023013">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="410369465749951">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="725004383969064" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\bahan\Platformer\Abstract Platformer\PNG\Tiles\Green tiles\tileGreen_24.png">
+                        <collision-poly>
+                            <point x="0.0625" y="0.0625" />
+                            <point x="0.5" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0.359375" y="0.640625" />
+                            <point x="0.140625" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite5" sid="748184940419265">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="996659462045478">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="895485589526117" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\bahan\Platformer\Abstract Platformer\PNG\Tiles\Green tiles\tileGreen_25.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.5" y="0" />
+                            <point x="0.9375" y="0.0625" />
+                            <point x="0.859375" y="0.5" />
+                            <point x="0.640625" y="0.640625" />
+                            <point x="0.5" y="0.703125" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="tileGreen_3" sid="389385012207357">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="366946739248904">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="800441635418602" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\bahan\Platformer\Abstract Platformer\PNG\Tiles\Green tiles\tileGreen_06.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.5" y="0" />
+                            <point x="0.9375" y="0.0625" />
+                            <point x="1" y="0.5" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="tileGreen_4" sid="656669269886555">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="639932625819363">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="544701721801944" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\bahan\Platformer\Abstract Platformer\PNG\Tiles\Green tiles\tileGreen_04.png">
+                        <collision-poly>
+                            <point x="0.0625" y="0.0625" />
+                            <point x="0.5" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="tileGreen_5" sid="413747865109768">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="548318905687694">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="280846151051761" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\bahan\Platformer\Abstract Platformer\PNG\Tiles\Green tiles\tileGreen_09.png">
+                        <collision-poly>
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0.03125" y="0.984375" />
+                            <point x="0.5" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite6" sid="520533885254079">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="221158025912866" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite8" sid="400186164322183">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="568845232690241" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="enemyFlying_" sid="326002686998569">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="182201262119930">
+                    <behavior id="Sin" />
+                </behavior-type>
+                <behavior-type name="Sine2" sid="683849453985699">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="561579301461931" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\bahan\Platformer\Abstract Platformer\PNG\Enemies\enemyFlying_1.png">
+                        <collision-poly>
+                            <point x="0.109375" y="0.184211" />
+                            <point x="0.5" y="0.368421" />
+                            <point x="0.890625" y="0.184211" />
+                            <point x="0.734375" y="0.5" />
+                            <point x="0.734375" y="0.552632" />
+                            <point x="0.5" y="1" />
+                            <point x="0.265625" y="0.552632" />
+                            <point x="0.265625" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\bahan\Platformer\Abstract Platformer\PNG\Enemies\enemyFlying_2.png">
+                        <collision-poly>
+                            <point x="0.21875" y="0.368421" />
+                            <point x="0.78125" y="0.368421" />
+                            <point x="0.984375" y="0.5" />
+                            <point x="0.734375" y="0.552632" />
+                            <point x="0.5" y="1" />
+                            <point x="0.265625" y="0.552632" />
+                            <point x="0.03125" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.511628" original-source="D:\bahan\Platformer\Abstract Platformer\PNG\Enemies\enemyFlying_3.png">
+                        <collision-poly>
+                            <point x="0.28125" y="0.418605" />
+                            <point x="0.5" y="0.325581" />
+                            <point x="0.71875" y="0.418605" />
+                            <point x="0.734375" y="0.488372" />
+                            <point x="0.734375" y="0.604651" />
+                            <point x="0.5" y="0.883721" />
+                            <point x="0.265625" y="0.604651" />
+                            <point x="0.265625" y="0.488372" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="mati" pingpong="0" repeatcount="1" repeatto="0" sid="235894828834130" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.52" original-source="D:\bahan\Platformer\Abstract Platformer\PNG\Enemies\enemyFlying_4.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="kayu_panjang" sid="410866002330885">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="550742322480785">
+                    <behavior id="Sin" />
+                </behavior-type>
+                <behavior-type name="Solid" sid="145379165207541">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="677120962223970" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="-0.636364" original-source="N:\!! BAHAN WORKSHOP GAME DEV\Construst 2\icon\kayu_panjang.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.986111" y="0.0454545" />
+                            <point x="0.958333" y="0.863636" />
+                            <point x="0.5" y="0.954545" />
+                            <point x="0.0416667" y="0.863636" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="enemySpikey_" sid="132438740964337">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="718903599326249">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="987366113165016" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\bahan\Platformer\Abstract Platformer\PNG\Enemies\enemySpikey_1.png">
+                        <collision-poly>
+                            <point x="0.375" y="0.3" />
+                            <point x="0.5" y="0" />
+                            <point x="0.625" y="0.3" />
+                            <point x="0.9375" y="0.5" />
+                            <point x="0.96875" y="0.975" />
+                            <point x="0.5" y="1" />
+                            <point x="0.03125" y="0.975" />
+                            <point x="0.0625" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\bahan\Platformer\Abstract Platformer\PNG\Enemies\enemySpikey_3.png">
+                        <collision-poly>
+                            <point x="0.375" y="0.1875" />
+                            <point x="0.5" y="0" />
+                            <point x="0.625" y="0.1875" />
+                            <point x="1" y="0.5" />
+                            <point x="0.96875" y="0.984375" />
+                            <point x="0.5" y="1" />
+                            <point x="0.03125" y="0.984375" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="mati" pingpong="0" repeatcount="1" repeatto="0" sid="872050002349638" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\bahan\Platformer\Abstract Platformer\PNG\Enemies\enemySpikey_4.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="enemyWalking_" sid="541700363571938">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="620022312195245">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="2" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="981479348384123" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\bahan\Platformer\Abstract Platformer\PNG\Enemies\enemyWalking_1.png">
+                        <collision-poly>
+                            <point x="0.15625" y="0.113636" />
+                            <point x="0.5" y="0" />
+                            <point x="0.84375" y="0.113636" />
+                            <point x="1" y="0.5" />
+                            <point x="0.6875" y="0.772727" />
+                            <point x="0.5" y="0.977273" />
+                            <point x="0.28125" y="0.795455" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\bahan\Platformer\Abstract Platformer\PNG\Enemies\enemyWalking_2.png">
+                        <collision-poly>
+                            <point x="0.15625" y="0.119048" />
+                            <point x="0.5" y="0" />
+                            <point x="0.84375" y="0.119048" />
+                            <point x="1" y="0.5" />
+                            <point x="0.75" y="0.809524" />
+                            <point x="0.5" y="0.809524" />
+                            <point x="0.21875" y="0.833333" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="2" loop="0" name="mati" pingpong="0" repeatcount="1" repeatto="0" sid="726520935633890" speed="5">
+                    <frame duration="1" hotspotX="0.510204" hotspotY="0.5" original-source="D:\bahan\Platformer\Abstract Platformer\PNG\Enemies\enemyWalking_3.png" />
+                    <frame duration="1" hotspotX="0.514286" hotspotY="0.512195" original-source="D:\bahan\Platformer\Abstract Platformer\PNG\Enemies\enemyWalking_4.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="enemyFloating_" sid="176332390362784">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="570541429736244">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="2" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="427067564248386" speed="6">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\bahan\Platformer\Abstract Platformer\PNG\Enemies\enemyFloating_1.png">
+                        <collision-poly>
+                            <point x="0.0238095" y="0.025" />
+                            <point x="0.97619" y="0.025" />
+                            <point x="0.97619" y="0.975" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0238095" y="0.975" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.509091" hotspotY="0.509091" original-source="D:\bahan\Platformer\Abstract Platformer\PNG\Enemies\enemyFloating_2.png">
+                        <collision-poly>
+                            <point x="0.254545" y="0.254545" />
+                            <point x="0.490909" y="0" />
+                            <point x="1" y="0.490909" />
+                            <point x="0.490909" y="1" />
+                            <point x="0.236364" y="0.763636" />
+                            <point x="0" y="0.490909" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="2" loop="0" name="mati" pingpong="0" repeatcount="1" repeatto="0" sid="393628121447752" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\bahan\Platformer\Abstract Platformer\PNG\Enemies\enemyFloating_3.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\bahan\Platformer\Abstract Platformer\PNG\Enemies\enemyFloating_4.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="tileGreen_6" sid="619665109993413">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="934643267504193">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="534139544766311" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\bahan\Platformer\Abstract Platformer\PNG\Tiles\Green tiles\tileGreen_18.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="enemySwimming_" sid="970124859073884">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="156806891255008">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="3" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="812216362290218" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\bahan\Platformer\Abstract Platformer\PNG\Enemies\enemySwimming_1.png">
+                        <collision-poly>
+                            <point x="0.772727" y="0.5" />
+                            <point x="0.954545" y="0.9375" />
+                            <point x="0.5" y="1" />
+                            <point x="0.113636" y="0.84375" />
+                            <point x="0" y="0.5" />
+                            <point x="0.113636" y="0.15625" />
+                            <point x="0.5" y="0" />
+                            <point x="0.954545" y="0.0625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\bahan\Platformer\Abstract Platformer\PNG\Enemies\enemySwimming_2.png">
+                        <collision-poly>
+                            <point x="0.954545" y="0.5" />
+                            <point x="0.704545" y="0.59375" />
+                            <point x="0.5" y="1" />
+                            <point x="0.113636" y="0.84375" />
+                            <point x="0" y="0.5" />
+                            <point x="0.113636" y="0.15625" />
+                            <point x="0.5" y="0" />
+                            <point x="0.704545" y="0.40625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\bahan\Platformer\Abstract Platformer\PNG\Enemies\enemySwimming_3.png">
+                        <collision-poly>
+                            <point x="1" y="0.5" />
+                            <point x="0.717391" y="0.59375" />
+                            <point x="0.5" y="1" />
+                            <point x="0.108696" y="0.84375" />
+                            <point x="0" y="0.5" />
+                            <point x="0.108696" y="0.15625" />
+                            <point x="0.5" y="0" />
+                            <point x="0.717391" y="0.40625" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="mati" pingpong="0" repeatcount="1" repeatto="0" sid="673007518381328" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\bahan\Platformer\Abstract Platformer\PNG\Enemies\enemySwimming_4.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite7" sid="572524164462896">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="620415529665299">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="996800139121746" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="N:\!! BAHAN WORKSHOP GAME DEV\Construst 2\icon\fireball.png">
+                        <collision-poly>
+                            <point x="0.385714" y="0.385714" />
+                            <point x="0.5" y="0.328571" />
+                            <point x="0.614286" y="0.385714" />
+                            <point x="0.585714" y="0.5" />
+                            <point x="0.614286" y="0.614286" />
+                            <point x="0.5" y="0.671429" />
+                            <point x="0.371429" y="0.628571" />
+                            <point x="0.328571" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="blueGem" sid="856065712437373">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="bintang" sid="4378475723585363" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="322330233781017" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\bahan\Platformer\Abstract Platformer\PNG\Items\blueGem.png">
+                        <collision-poly>
+                            <point x="0.181818" y="0.181818" />
+                            <point x="0.5" y="0" />
+                            <point x="0.818182" y="0.181818" />
+                            <point x="1" y="0.5" />
+                            <point x="0.818182" y="0.818182" />
+                            <point x="0.5" y="1" />
+                            <point x="0.181818" y="0.818182" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Gems" sid="724480745257029">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="687020522855742" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509434" original-source="D:\bahan\Platformer\Abstract Platformer\PNG\extra\Gems.png">
+                        <collision-poly>
+                            <point x="0.16129" y="0.188679" />
+                            <point x="0.5" y="0" />
+                            <point x="0.854839" y="0.169811" />
+                            <point x="1" y="0.490566" />
+                            <point x="0.806452" y="0.773585" />
+                            <point x="0.5" y="1" />
+                            <point x="0.209677" y="0.754717" />
+                            <point x="0.0322581" y="0.490566" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="SpriteFont" sid="458507284302437">
+            <plugin id="Spritefont2" />
+            <texture original-source="D:\bahan\Platformer\SpriteFont\SpriteFont_Vogue_ExtraBold_(50)_[0,0,0,0]_55x60.png" />
+        </object-type>
+        <object-type name="SpriteFont2" sid="832332259751747">
+            <plugin id="Spritefont2" />
+            <texture />
+        </object-type>
+        <object-type name="SpriteFont3" sid="727581137640815">
+            <plugin id="Spritefont2" />
+            <texture />
+        </object-type>
+        <object-type name="Text" sid="157364718720509">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="SpriteFont4" sid="563549226212387">
+            <plugin id="Spritefont2" />
+            <texture original-source="D:\bahan\Platformer\SpriteFont\SpriteFont_Vogue_ExtraBold_(50)_[0,0,0,0]_55x60.png" />
+        </object-type>
+        <object-type name="Text2" sid="612190567109707">
+            <plugin id="Text" />
+            <instance-variables>
+                <instance-variable name="type" sid="627727190384666" type="string" />
+            </instance-variables>
+        </object-type>
+        <object-type name="Sprite9" sid="364303084675137">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="815784307793927" speed="5">
+                    <frame duration="1" hotspotX="0.508197" hotspotY="0.509434" original-source="D:\bahan\Platformer\Abstract Platformer\PNG\extra\hudHeart_full.png">
+                        <collision-poly>
+                            <point x="0.0819672" y="0.0943396" />
+                            <point x="0.491803" y="0.0754717" />
+                            <point x="0.918033" y="0.0943396" />
+                            <point x="0.967213" y="0.490566" />
+                            <point x="0.786885" y="0.754717" />
+                            <point x="0.491803" y="0.981132" />
+                            <point x="0.213115" y="0.754717" />
+                            <point x="0.0327869" y="0.490566" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Text3" sid="473945638895841">
+            <plugin id="Text" />
+            <instance-variables>
+                <instance-variable name="type" sid="215183965099022" type="string" />
+            </instance-variables>
+        </object-type>
+        <object-type name="Sprite10" sid="713556490525688">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="294670364227010">
+                    <behavior id="Bullet" />
+                </behavior-type>
+                <behavior-type name="Fade" sid="839692152240248">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="879301729037491" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\bahan\Platformer\Abstract Platformer\PNG\extra\bonus.png">
+                        <collision-poly>
+                            <point x="0.18" y="0.25" />
+                            <point x="0.5" y="0.166667" />
+                            <point x="0.92" y="0.111111" />
+                            <point x="0.96" y="0.5" />
+                            <point x="0.96" y="0.944444" />
+                            <point x="0.5" y="0.944444" />
+                            <point x="0.16" y="0.777778" />
+                            <point x="0.02" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite11" sid="373172540946545">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="504535365934593" speed="5">
+                    <frame duration="1" hotspotX="0.500829" hotspotY="0.501171" original-source="D:\bahan\Platformer\GUI\Window.png">
+                        <collision-poly>
+                            <point x="0.0116086" y="0.0163934" />
+                            <point x="0.499171" y="0.00234192" />
+                            <point x="0.985075" y="0.0210773" />
+                            <point x="0.980099" y="0.971897" />
+                            <point x="0.0165837" y="0.976581" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="gameover" sid="688376549274649">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="405915142690821" speed="0">
+                    <frame duration="1" hotspotX="0.501089" hotspotY="0.5" original-source="D:\bahan\Platformer\GUI\gameover.png" />
+                    <frame duration="1" hotspotX="0.501089" hotspotY="0.5" original-source="D:\bahan\Platformer\GUI\complete.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite13" sid="385583613977313">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="737267340697446" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\bahan\Platformer\GUI\gui\button\Button_09.png">
+                        <collision-poly>
+                            <point x="0.076087" y="0.0729167" />
+                            <point x="0.5" y="0" />
+                            <point x="0.913043" y="0.0833333" />
+                            <point x="0.978261" y="0.5" />
+                            <point x="0.891304" y="0.895833" />
+                            <point x="0.5" y="0.947917" />
+                            <point x="0.0978261" y="0.90625" />
+                            <point x="0.0108696" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\bahan\Platformer\GUI\gui\button\Button_12.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite14" sid="187158730592664">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="100621385936992" speed="0">
+                    <frame duration="1" hotspotX="0.505376" hotspotY="0.5" original-source="D:\bahan\Platformer\GUI\gui\button\Button_50.png">
+                        <collision-poly>
+                            <point x="0.0752688" y="0.0729167" />
+                            <point x="0.494624" y="0.0104167" />
+                            <point x="0.903226" y="0.09375" />
+                            <point x="0.967742" y="0.5" />
+                            <point x="0.892473" y="0.895833" />
+                            <point x="0.494624" y="0.947917" />
+                            <point x="0.0967742" y="0.90625" />
+                            <point x="0.0107527" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TiledBackground2" sid="809519419862751">
+            <plugin id="TiledBg" />
+            <texture />
+        </object-type>
+        <object-type name="Sprite15" sid="495662629707653">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="788657227807052" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite16" sid="178307483976382">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="945241285935362" speed="5">
+                    <frame duration="1" hotspotX="0.517241" hotspotY="0.5" original-source="D:\bahan\Platformer\Abstract Platformer\PNG\Items\keyGreen.png">
+                        <collision-poly>
+                            <point x="0.310345" y="0.3" />
+                            <point x="0.482759" y="0.0333333" />
+                            <point x="0.896552" y="0.1" />
+                            <point x="0.965517" y="0.5" />
+                            <point x="0.689655" y="0.7" />
+                            <point x="0.482759" y="0.7" />
+                            <point x="0.0344828" y="0.966667" />
+                            <point x="0.310345" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="key" sid="218809913808097">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="type" sid="737327780850457" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="4" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="407019190633622" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509434" original-source="D:\bahan\Platformer\Abstract Platformer\PNG\extra\key0.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509434" original-source="D:\bahan\Platformer\Abstract Platformer\PNG\extra\key1.png">
+                        <collision-poly>
+                            <point x="0.97561" y="0" />
+                            <point x="0.981707" y="0.90566" />
+                            <point x="0.0243902" y="0.924528" />
+                            <point x="0.00609756" y="1.49012e-007" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509434" original-source="D:\bahan\Platformer\Abstract Platformer\PNG\extra\key2.png">
+                        <collision-poly>
+                            <point x="0" y="0.0377358" />
+                            <point x="0.615854" y="0" />
+                            <point x="1" y="0" />
+                            <point x="0.975609" y="0.943396" />
+                            <point x="0.0243902" y="0.924528" />
+                            <point x="0.0121951" y="0.490566" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.503145" hotspotY="0.511111" original-source="D:\bahan\Platformer\Abstract Platformer\PNG\extra\key3.png">
+                        <collision-poly>
+                            <point x="0.00628931" y="0" />
+                            <point x="0.496855" y="0.0666667" />
+                            <point x="0.962264" y="0.133333" />
+                            <point x="0.987421" y="0.488889" />
+                            <point x="0.962264" y="1" />
+                            <point x="0.440252" y="1" />
+                            <point x="0.0188679" y="0.933333" />
+                            <point x="0" y="0.533333" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="doorGreen_top" sid="553462177908442">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="373648708433472" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\bahan\Platformer\Abstract Platformer\PNG\Other\doorGreen_top.png">
+                        <collision-poly>
+                            <point x="0.03125" y="0.03125" />
+                            <point x="0.5" y="0" />
+                            <point x="0.96875" y="0.03125" />
+                            <point x="1" y="0.5" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\bahan\Platformer\Abstract Platformer\PNG\Other\doorOpen_top.png">
+                        <collision-poly>
+                            <point x="0.03125" y="0.03125" />
+                            <point x="0.5" y="0" />
+                            <point x="0.96875" y="0.03125" />
+                            <point x="1" y="0.5" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="doorGreen_lock" sid="623272039963922">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="158075077422884" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\bahan\Platformer\Abstract Platformer\PNG\Other\doorGreen_lock.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\bahan\Platformer\Abstract Platformer\PNG\Other\doorOpen.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TiledBackground3" sid="937477534660633">
+            <plugin id="TiledBg" />
+            <texture original-source="D:\bahan\Platformer\Abstract Platformer\PNG\extra\backgroundMenu.png" />
+        </object-type>
+        <object-type name="complete" sid="940143921344782">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="517284586134217" speed="5">
+                    <frame duration="1" hotspotX="0.501089" hotspotY="0.5" original-source="D:\bahan\Platformer\GUI\complete.png">
+                        <collision-poly>
+                            <point x="0.0827887" y="0.311475" />
+                            <point x="0.498911" y="0" />
+                            <point x="0.917211" y="0.311475" />
+                            <point x="0.923747" y="0.5" />
+                            <point x="0.954248" y="0.827869" />
+                            <point x="0.498911" y="0.606557" />
+                            <point x="0.043573" y="0.836066" />
+                            <point x="0.0784314" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Audio" sid="970937857121772">
+            <plugin id="Audio" />
+        </object-type>
+        <object-type name="Function" sid="166073618161021">
+            <plugin id="Function" />
+        </object-type>
+        <object-type name="Button_" sid="369827642692624">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="170634925458887" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\bahan\Platformer\GUI\gui\button 2\Button_09.png">
+                        <collision-poly>
+                            <point x="0.0710383" y="0.0684211" />
+                            <point x="0.497268" y="0" />
+                            <point x="0.912568" y="0.0842105" />
+                            <point x="0.972678" y="0.5" />
+                            <point x="0.896175" y="0.9" />
+                            <point x="0.497268" y="0.952632" />
+                            <point x="0.0874317" y="0.915789" />
+                            <point x="0.00546448" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\bahan\Platformer\GUI\gui\button 2\Button_12.png">
+                        <collision-poly>
+                            <point x="0.0833333" y="0.0804094" />
+                            <point x="0.5" y="0.0138889" />
+                            <point x="0.900641" y="0.0957602" />
+                            <point x="0.964744" y="0.5" />
+                            <point x="0.884615" y="0.888889" />
+                            <point x="0.5" y="0.940058" />
+                            <point x="0.099359" y="0.90424" />
+                            <point x="0.0138889" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Button_2" sid="247526731553121">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="819755701973604" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\bahan\Platformer\GUI\gui\button 2\Button_13.png">
+                        <collision-poly>
+                            <point x="0.0829539" y="0.0804094" />
+                            <point x="0.497344" y="0.0138889" />
+                            <point x="0.901108" y="0.0957602" />
+                            <point x="0.959548" y="0.5" />
+                            <point x="0.88517" y="0.888889" />
+                            <point x="0.497344" y="0.940058" />
+                            <point x="0.0988919" y="0.90424" />
+                            <point x="0.0192016" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\bahan\Platformer\GUI\gui\button 2\Button_16.png">
+                        <collision-poly>
+                            <point x="0.0714286" y="0.0684211" />
+                            <point x="0.5" y="0" />
+                            <point x="0.912088" y="0.0842105" />
+                            <point x="0.978022" y="0.5" />
+                            <point x="0.895604" y="0.9" />
+                            <point x="0.5" y="0.952632" />
+                            <point x="0.0879121" y="0.915789" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite12" sid="745332012789057">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="968562755918293" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="N:\!! BAHAN WORKSHOP GAME DEV\Construst 2\icon\kotak1.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite17" sid="728939457866740">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="746204911104352">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="662186013057136" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="N:\!! BAHAN WORKSHOP GAME DEV\Construst 2\icon\kotak1.png">
+                        <collision-poly>
+                            <point x="0.0285714" y="0.0285714" />
+                            <point x="0.5" y="0" />
+                            <point x="0.971429" y="0.0285714" />
+                            <point x="1" y="0.5" />
+                            <point x="0.971429" y="0.971429" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0285714" y="0.971429" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Tilemap" sid="375519334812110">
+            <plugin id="Tilemap" />
+            <texture original-source="D:\bahan\Platformer\Abstract Platformer\PNG\Backgrounds\set4_background.png" />
+            <tiles />
+        </object-type>
+        <object-type name="TiledBackground4" sid="912872038921303">
+            <plugin id="TiledBg" />
+            <texture original-source="D:\bahan\Platformer\Abstract Platformer\PNG\Backgrounds\set1_background.png" />
+        </object-type>
+        <object-type name="TiledBackground5" sid="907329394770492">
+            <plugin id="TiledBg" />
+            <texture original-source="D:\bahan\Platformer\Abstract Platformer\PNG\Backgrounds\set1_hills.png" />
+        </object-type>
+        <object-type name="TiledBackground6" sid="183326405127719">
+            <plugin id="TiledBg" />
+            <texture original-source="D:\bahan\Platformer\Abstract Platformer\PNG\Backgrounds\set1_tiles.png" />
+        </object-type>
+        <object-type name="Sprite18" sid="750333048006377">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="948214888605450">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="188747727955439" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\bahan\Platformer\Abstract Platformer\PNG\Tiles\Brown tiles\tileBrown_27.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TiledBackground7" sid="604973886348411">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="725324029584321">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="D:\bahan\Platformer\Abstract Platformer\PNG\Tiles\Brown tiles\tileBrown_02.png" />
+        </object-type>
+        <object-type name="Sprite19" sid="963436691612885">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="420953018980424">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="151685289457724" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.515625" original-source="D:\bahan\Platformer\Abstract Platformer\PNG\Tiles\Brown tiles\tileBrown_03.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.5" y="0" />
+                            <point x="0.9375" y="0.0754717" />
+                            <point x="1" y="0.490566" />
+                            <point x="0.90625" y="0.886792" />
+                            <point x="0.5" y="0.867925" />
+                            <point x="0.09375" y="0.886792" />
+                            <point x="0" y="0.490566" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="tileYellow_" sid="211851253473065">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="678212844506587">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="979892270934774" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\bahan\Platformer\Abstract Platformer\PNG\Tiles\Brown tiles\tileBrown_16.png">
+                        <collision-poly>
+                            <point x="0.0625" y="0.0625" />
+                            <point x="0.5" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0.5" y="0.890625" />
+                            <point x="0.3125" y="0.6875" />
+                            <point x="0.25" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="tileYellow_2" sid="991576517375506">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="380937313519280">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="209610904921414" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\bahan\Platformer\Abstract Platformer\PNG\Tiles\Brown tiles\tileBrown_17.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.5" y="0" />
+                            <point x="0.9375" y="0.0625" />
+                            <point x="0.75" y="0.5" />
+                            <point x="0.6875" y="0.6875" />
+                            <point x="0.5" y="0.875" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="tileYellow_3" sid="116172938359276">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="853991986021465">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="886042647068504" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\bahan\Platformer\Abstract Platformer\PNG\Tiles\Brown tiles\tileBrown_25.png">
+                        <collision-poly>
+                            <point x="0.0625" y="0.0625" />
+                            <point x="0.5" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0.3125" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="tileYellow_4" sid="236414041952104">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="124022626531480">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="270075673636785" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\bahan\Platformer\Abstract Platformer\PNG\Tiles\Brown tiles\tileBrown_26.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.5" y="0" />
+                            <point x="0.9375" y="0.0625" />
+                            <point x="0.6875" y="0.5" />
+                            <point x="0.578125" y="0.578125" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="tileYellow_5" sid="567203886675099">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="313076390990340">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="560891877567527" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\bahan\Platformer\Abstract Platformer\PNG\Tiles\Brown tiles\tileBrown_01.png">
+                        <collision-poly>
+                            <point x="0.0625" y="0.0625" />
+                            <point x="0.5" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="tileYellow_6" sid="884008512274814">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="364845723110572">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="298336335496136" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\bahan\Platformer\Abstract Platformer\PNG\Tiles\Brown tiles\tileBrown_04.png">
+                        <collision-poly>
+                            <point x="0.0625" y="0.0625" />
+                            <point x="0.5" y="0" />
+                            <point x="0.9375" y="0.0625" />
+                            <point x="1" y="0.5" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="tileYellow_7" sid="730168753587570">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="465024702178682">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="874566661543022" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\bahan\Platformer\Abstract Platformer\PNG\Tiles\Brown tiles\tileBrown_10.png">
+                        <collision-poly>
+                            <point x="1" y="0.5" />
+                            <point x="1" y="1" />
+                            <point x="0.5" y="1" />
+                            <point x="0.5" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="tileYellow_8" sid="796455388340868">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="603057342139691">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="376046297452505" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\bahan\Platformer\Abstract Platformer\PNG\Tiles\Brown tiles\tileBrown_19.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite20" sid="878290727426415">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="642913362573085" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="N:\!! BAHAN WORKSHOP GAME DEV\Construst 2\icon\Kontrol\Hitam_Kiri.png">
+                        <collision-poly>
+                            <point x="0.15" y="0.15" />
+                            <point x="0.5" y="0.0125" />
+                            <point x="0.85" y="0.15" />
+                            <point x="1" y="0.5" />
+                            <point x="0.85" y="0.85" />
+                            <point x="0.5" y="1" />
+                            <point x="0.15" y="0.85" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite21" sid="661945230802204">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="762781695203519" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="N:\!! BAHAN WORKSHOP GAME DEV\Construst 2\icon\Kontrol\Hitam_Kanan.png">
+                        <collision-poly>
+                            <point x="0.15" y="0.15" />
+                            <point x="0.5" y="0.0125" />
+                            <point x="0.85" y="0.15" />
+                            <point x="1" y="0.5" />
+                            <point x="0.85" y="0.85" />
+                            <point x="0.5" y="1" />
+                            <point x="0.15" y="0.85" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite22" sid="292143226310151">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="488971852267958" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="N:\!! BAHAN WORKSHOP GAME DEV\Construst 2\icon\Kontrol\Hitam_Fire.png">
+                        <collision-poly>
+                            <point x="0.15" y="0.15" />
+                            <point x="0.5" y="0.0125" />
+                            <point x="0.85" y="0.15" />
+                            <point x="1" y="0.5" />
+                            <point x="0.85" y="0.85" />
+                            <point x="0.5" y="1" />
+                            <point x="0.15" y="0.85" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite23" sid="583882710529764">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="560143158558528" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="N:\!! BAHAN WORKSHOP GAME DEV\Construst 2\icon\Kontrol\Hitam_Atas.png">
+                        <collision-poly>
+                            <point x="0.15" y="0.15" />
+                            <point x="0.5" y="0.0125" />
+                            <point x="0.85" y="0.15" />
+                            <point x="1" y="0.5" />
+                            <point x="0.85" y="0.85" />
+                            <point x="0.5" y="1" />
+                            <point x="0.15" y="0.85" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite24" sid="730049241042407">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="146378836580220">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="924994997726413" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="N:\!! BAHAN WORKSHOP GAME DEV\Construst 2\icon\kotak1.png">
+                        <collision-poly>
+                            <point x="0.0285714" y="0.0285714" />
+                            <point x="0.5" y="0" />
+                            <point x="0.971429" y="0.0285714" />
+                            <point x="1" y="0.5" />
+                            <point x="0.971429" y="0.971429" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0285714" y="0.971429" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite25" sid="992417624487670">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="877119740086852">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="580293414394177" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="-0.333333" original-source="N:\!! BAHAN WORKSHOP GAME DEV\Construst 2\icon\kayu_bulat.png">
+                        <collision-poly>
+                            <point x="0" y="0.037037" />
+                            <point x="0.5" y="0.037037" />
+                            <point x="0.958334" y="0.037037" />
+                            <point x="0.944444" y="0.851852" />
+                            <point x="0.5" y="0.962963" />
+                            <point x="0.0555556" y="0.851852" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TiledBackground8" sid="871042826373904">
+            <plugin id="TiledBg" />
+            <texture original-source="D:\bahan\Platformer\Abstract Platformer\PNG\Backgrounds\set1_background.png" />
+        </object-type>
+        <object-type name="TiledBackground9" sid="650386658107144">
+            <plugin id="TiledBg" />
+            <texture original-source="D:\bahan\Platformer\Abstract Platformer\PNG\Backgrounds\set1_hills.png" />
+        </object-type>
+        <object-type name="TiledBackground10" sid="332845594414834">
+            <plugin id="TiledBg" />
+            <texture original-source="D:\bahan\Platformer\Abstract Platformer\PNG\Backgrounds\set1_tiles.png" />
+        </object-type>
+        <object-type name="TiledBackground11" sid="883393093318849">
+            <plugin id="TiledBg" />
+            <texture />
+        </object-type>
+        <object-type name="TiledBackground12" sid="222344312757033">
+            <plugin id="TiledBg" />
+            <texture original-source="D:\bahan\Platformer\Abstract Platformer\PNG\Backgrounds\set4_background.png" />
+        </object-type>
+        <object-type name="TiledBackground13" sid="527603068060103">
+            <plugin id="TiledBg" />
+            <texture original-source="D:\bahan\Platformer\Abstract Platformer\PNG\Backgrounds\set4_tiles.png" />
+        </object-type>
+        <object-type name="TiledBackground14" sid="250060110426271">
+            <plugin id="TiledBg" />
+            <texture original-source="D:\bahan\Platformer\Abstract Platformer\PNG\Backgrounds\set4_hills.png" />
+        </object-type>
+        <object-type name="TiledBackground15" sid="183535554038481">
+            <plugin id="TiledBg" />
+            <texture original-source="D:\bahan\Platformer\Abstract Platformer\PNG\Tiles\Blue tiles\tileBlue_03.png" />
+        </object-type>
+        <object-type name="TiledBackground16" sid="851730726948225">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="757280973120557">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="D:\bahan\Platformer\Abstract Platformer\PNG\Tiles\Blue tiles\tileBlue_05.png" />
+        </object-type>
+        <object-type name="Sprite26" sid="787492311132694">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="206118603169518">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="356701695289820" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\bahan\Platformer\Abstract Platformer\PNG\Tiles\Blue tiles\tileBlue_01.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.5" y="0" />
+                            <point x="0.9375" y="0.08" />
+                            <point x="1" y="0.5" />
+                            <point x="0.90625" y="0.88" />
+                            <point x="0.03125" y="0.96" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite27" sid="998057553647886">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="698575719650719">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="519668713266800" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\bahan\Platformer\Abstract Platformer\PNG\Tiles\Blue tiles\tileBlue_24.png">
+                        <collision-poly>
+                            <point x="0.0625" y="0.0625" />
+                            <point x="0.5" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0.3125" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite28" sid="897599273825227">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="760727366832388">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="644322473672972" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\bahan\Platformer\Abstract Platformer\PNG\Tiles\Blue tiles\tileBlue_25.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.5" y="0" />
+                            <point x="0.9375" y="0.0625" />
+                            <point x="0.6875" y="0.5" />
+                            <point x="0.578125" y="0.578125" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite29" sid="698305843188350">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="486258203985897">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="505963170738317" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\bahan\Platformer\Abstract Platformer\PNG\Tiles\Blue tiles\tileBlue_15.png">
+                        <collision-poly>
+                            <point x="0.0625" y="0.0625" />
+                            <point x="0.5" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0.5" y="0.953125" />
+                            <point x="0.203125" y="0.796875" />
+                            <point x="0.015625" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite30" sid="972830733570893">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="697868392931147">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="471684696088513" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\bahan\Platformer\Abstract Platformer\PNG\Tiles\Blue tiles\tileBlue_16.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.5" y="0" />
+                            <point x="0.9375" y="0.0625" />
+                            <point x="0.984375" y="0.5" />
+                            <point x="0.796875" y="0.796875" />
+                            <point x="0.5" y="0.9375" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite31" sid="801337410501227">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="877389980205399">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="245756099347920" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\bahan\Platformer\Abstract Platformer\PNG\Tiles\Blue tiles\tileBlue_04.png">
+                        <collision-poly>
+                            <point x="0.0625" y="0.0625" />
+                            <point x="0.5" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite32" sid="400686825052090">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="899850892979528">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="596060214385266" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\bahan\Platformer\Abstract Platformer\PNG\Tiles\Blue tiles\tileBlue_06.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.5" y="0" />
+                            <point x="0.9375" y="0.0625" />
+                            <point x="1" y="0.5" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite33" sid="414981358587571">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="969577218149974" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="kayu_panjang2" sid="203925252828832">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="470054857636945">
+                    <behavior id="Sin" />
+                </behavior-type>
+                <behavior-type name="Solid" sid="1461011540630761">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="137426044573536" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="-0.636364" original-source="N:\!! BAHAN WORKSHOP GAME DEV\Construst 2\icon\kayu_panjang.png">
+                        <collision-poly>
+                            <point x="0" y="0.272727" />
+                            <point x="1" y="0" />
+                            <point x="0.958333" y="0.863636" />
+                            <point x="0.5" y="0.954545" />
+                            <point x="0.0416667" y="0.863636" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite34" sid="517608575666782">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="718121314881772" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="N:\!! BAHAN WORKSHOP GAME DEV\Construst 2\icon\paku.png">
+                        <collision-poly>
+                            <point x="0" y="0.342857" />
+                            <point x="0.5" y="0.528571" />
+                            <point x="0.885715" y="0.4" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite35" sid="919825342800878">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="992252296575697" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="slimeBlue" sid="468050412342970">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="242005513223280" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\bahan\PNG\Enemies\slimeBlue.png">
+                        <collision-poly>
+                            <point x="0.515625" y="0.515625" />
+                            <point x="0.484375" y="0.515625" />
+                            <point x="0.84375" y="0.84375" />
+                            <point x="0.5" y="1" />
+                            <point x="0.15625" y="0.84375" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\bahan\PNG\Enemies\slimeBlue_move.png">
+                        <collision-poly>
+                            <point x="0.585938" y="0.585938" />
+                            <point x="0.5" y="0.578125" />
+                            <point x="0.414063" y="0.585938" />
+                            <point x="0.898438" y="0.898438" />
+                            <point x="0.5" y="1" />
+                            <point x="0.101563" y="0.898438" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="slimePurple" sid="592610289345801">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="297006620514552">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="511704479496681" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\bahan\PNG\Enemies\slimePurple.png">
+                        <collision-poly>
+                            <point x="0.515625" y="0.515625" />
+                            <point x="0.484375" y="0.515625" />
+                            <point x="0.84375" y="0.84375" />
+                            <point x="0.5" y="1" />
+                            <point x="0.15625" y="0.84375" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\bahan\PNG\Enemies\slimePurple_move.png">
+                        <collision-poly>
+                            <point x="0.585938" y="0.585938" />
+                            <point x="0.5" y="0.578125" />
+                            <point x="0.414063" y="0.585938" />
+                            <point x="0.898438" y="0.898438" />
+                            <point x="0.5" y="1" />
+                            <point x="0.101563" y="0.898438" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="2" loop="0" name="mati" pingpong="0" repeatcount="1" repeatto="0" sid="326750719647669" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\bahan\PNG\Enemies\slimePurple_dead.png">
+                        <collision-poly>
+                            <point x="0.28125" y="0.226563" />
+                            <point x="0.726563" y="0.304688" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\bahan\PNG\Enemies\slimePurple_hit.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite36" sid="552270149317614">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3740397099693739" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Button_3" sid="4134947436571659">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1578693506561163" speed="5">
+                    <frame duration="1" hotspotX="0.505376" hotspotY="0.5" original-source="D:\bahan\Platformer\GUI\gui\button\Button_49.png">
+                        <collision-poly>
+                            <point x="0.0752688" y="0.0729167" />
+                            <point x="0.494624" y="0.0104167" />
+                            <point x="0.903226" y="0.09375" />
+                            <point x="0.967742" y="0.5" />
+                            <point x="0.892473" y="0.895833" />
+                            <point x="0.494624" y="0.947917" />
+                            <point x="0.0967742" y="0.90625" />
+                            <point x="0.0107527" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\bahan\Platformer\GUI\gui\button\Button_46.png">
+                        <collision-poly>
+                            <point x="0.076087" y="0.0729167" />
+                            <point x="0.5" y="0.0104167" />
+                            <point x="0.902174" y="0.09375" />
+                            <point x="0.967391" y="0.5" />
+                            <point x="0.891304" y="0.895833" />
+                            <point x="0.5" y="0.947917" />
+                            <point x="0.0869565" y="0.916667" />
+                            <point x="0.0108696" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TiledBackground17" sid="7579453041423298">
+            <plugin id="TiledBg" />
+            <texture original-source="D:\bahan\Platformer\Abstract Platformer\PNG\extra\backgroundMenu.png" />
+        </object-type>
+        <object-type name="Play" sid="5319853515361849">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3301020252348316" speed="3">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.505155" original-source="D:\bahan\Platformer\GUI\gui\button\Play2.png">
+                        <collision-poly>
+                            <point x="0.037037" y="0.0824742" />
+                            <point x="0.5" y="0.0103093" />
+                            <point x="0.958333" y="0.0927835" />
+                            <point x="0.986111" y="0.494845" />
+                            <point x="0.949074" y="0.886598" />
+                            <point x="0.5" y="0.938144" />
+                            <point x="0.0462963" y="0.896907" />
+                            <point x="0.00925926" y="0.494845" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.502326" hotspotY="0.505155" original-source="D:\bahan\Platformer\GUI\gui\button\Play1.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="WindowCopy_" sid="4952893207386802">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8619003455758238" speed="5">
+                    <frame duration="1" hotspotX="0.500829" hotspotY="0.501035" original-source="D:\bahan\Platformer\GUI\gui\widow\Window - Copy_06.png">
+                        <collision-poly>
+                            <point x="0.0945274" y="0.118012" />
+                            <point x="0.499171" y="0" />
+                            <point x="0.905473" y="0.118012" />
+                            <point x="0.99005" y="0.498965" />
+                            <point x="0.980099" y="0.975155" />
+                            <point x="0.0149254" y="0.981366" />
+                            <point x="0" y="0.498965" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="WindowCopy_2" sid="4434710998553394">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3188510469333007" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\bahan\Platformer\GUI\gui\widow\Window - Copy_02.png">
+                        <collision-poly>
+                            <point x="0.0113636" y="0.0263158" />
+                            <point x="0.5" y="0.394737" />
+                            <point x="0.965909" y="0.0789474" />
+                            <point x="0.977273" y="0.5" />
+                            <point x="0.965909" y="0.921053" />
+                            <point x="0.5" y="0.973684" />
+                            <point x="0.0340909" y="0.921053" />
+                            <point x="0.0113636" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="WindowCopy_3" sid="897193937689841">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7793055914559094" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\bahan\Platformer\GUI\gui\widow\Window - Copy_03.png">
+                        <collision-poly>
+                            <point x="0.059322" y="0.184211" />
+                            <point x="0.5" y="0.157895" />
+                            <point x="0.915254" y="0.263158" />
+                            <point x="0.957627" y="0.5" />
+                            <point x="0.966102" y="0.894737" />
+                            <point x="0.0338983" y="0.894737" />
+                            <point x="0.0254237" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Button_4" sid="7539224344473904">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="level" sid="9238811900398972" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9230565437281326" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.503497" original-source="D:\bahan\Platformer\GUI\level select\Button_01.png">
+                        <collision-poly>
+                            <point x="0.0724638" y="0.0699301" />
+                            <point x="0.5" y="0" />
+                            <point x="0.913043" y="0.0839161" />
+                            <point x="0.971014" y="0.496504" />
+                            <point x="0.891304" y="0.895105" />
+                            <point x="0.5" y="0.951049" />
+                            <point x="0.0942029" y="0.909091" />
+                            <point x="0.00724638" y="0.496504" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.503497" original-source="D:\bahan\Platformer\GUI\level select\Button_05.png">
+                        <collision-poly>
+                            <point x="0.0724638" y="0.0699301" />
+                            <point x="0.5" y="0" />
+                            <point x="0.905797" y="0.0909091" />
+                            <point x="0.971014" y="0.496504" />
+                            <point x="0.891304" y="0.895105" />
+                            <point x="0.5" y="0.951049" />
+                            <point x="0.0869565" y="0.916084" />
+                            <point x="0.00724638" y="0.496504" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Text4" sid="2520732885299449">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Text5" sid="2542825770384109">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Button_5" sid="813599232051621">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2988892390391405" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.503497" original-source="D:\bahan\Platformer\GUI\level select\Button_01.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.503497" original-source="D:\bahan\Platformer\GUI\level select\Button_05.png">
+                        <collision-poly>
+                            <point x="0.0724638" y="0.0699301" />
+                            <point x="0.5" y="0" />
+                            <point x="0.905797" y="0.0909091" />
+                            <point x="0.971014" y="0.496504" />
+                            <point x="0.891304" y="0.895105" />
+                            <point x="0.5" y="0.951049" />
+                            <point x="0.0869565" y="0.916084" />
+                            <point x="0.00724638" y="0.496504" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite37" sid="274215504372601">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="lev" sid="8677806815824108" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1531089297598566" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.503497" original-source="D:\bahan\Platformer\GUI\level select\1568298056135.png" />
+                </animation>
+                <animation framecount="1" loop="0" name="lock" pingpong="0" repeatcount="1" repeatto="0" sid="6540629387514382" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.503497" original-source="D:\bahan\Platformer\GUI\level select\Button_05.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite38" sid="2866327210708989">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="lev" sid="3154597979037508" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1257342822792946" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.503497" original-source="D:\bahan\Platformer\GUI\level select\1568298073492.png" />
+                </animation>
+                <animation framecount="1" loop="0" name="lock" pingpong="0" repeatcount="1" repeatto="0" sid="3208146189130586" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.503497" original-source="D:\bahan\Platformer\GUI\level select\Button_05.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite39" sid="686630690222577">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="lev" sid="2412720669389398" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8517056814904545" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.503497" original-source="D:\bahan\Platformer\GUI\level select\1568298088299.png" />
+                </animation>
+                <animation framecount="1" loop="0" name="lock" pingpong="0" repeatcount="1" repeatto="0" sid="1236486862046792" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.503497" original-source="D:\bahan\Platformer\GUI\level select\Button_05.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite40" sid="2202879547697325">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="lev" sid="8270909264390359" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6215572870957121" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.503497">
+                        <collision-poly>
+                            <point x="0.0942029" y="0.0909091" />
+                            <point x="0.5" y="0.00699301" />
+                            <point x="0.884058" y="0.111888" />
+                            <point x="0.934783" y="0.496504" />
+                            <point x="0.847826" y="0.853147" />
+                            <point x="0.5" y="0.888112" />
+                            <point x="0.144928" y="0.86014" />
+                            <point x="0.057971" y="0.496504" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="lock" pingpong="0" repeatcount="1" repeatto="0" sid="3830657096615811" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.503497" original-source="D:\bahan\Platformer\GUI\level select\Button_05.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite41" sid="2655443255271705">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="lev" sid="1622880535877401" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9447591319754346" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.503497" original-source="D:\bahan\Platformer\GUI\level select\1568298123163.png">
+                        <collision-poly>
+                            <point x="0.0942029" y="0.0909091" />
+                            <point x="0.5" y="0.00699301" />
+                            <point x="0.884058" y="0.111888" />
+                            <point x="0.934783" y="0.496504" />
+                            <point x="0.847826" y="0.853147" />
+                            <point x="0.5" y="0.888112" />
+                            <point x="0.144928" y="0.86014" />
+                            <point x="0.057971" y="0.496504" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="lock" pingpong="0" repeatcount="1" repeatto="0" sid="1049404883113981" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.503497" original-source="D:\bahan\Platformer\GUI\level select\Button_05.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite42" sid="8601459734406758">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="lev" sid="1818764139346706" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5458876405584276" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.503497" original-source="D:\bahan\Platformer\GUI\level select\1568298141495.png">
+                        <collision-poly>
+                            <point x="0.0942029" y="0.0909091" />
+                            <point x="0.5" y="0.00699301" />
+                            <point x="0.884058" y="0.111888" />
+                            <point x="0.934783" y="0.496504" />
+                            <point x="0.847826" y="0.853147" />
+                            <point x="0.5" y="0.888112" />
+                            <point x="0.144928" y="0.86014" />
+                            <point x="0.057971" y="0.496504" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="lock" pingpong="0" repeatcount="1" repeatto="0" sid="225947492216689" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.503497" original-source="D:\bahan\Platformer\GUI\level select\Button_05.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite43" sid="1598249953539498">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="lev" sid="4029985508058215" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2082229984101954" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\bahan\Platformer\GUI\level select\1568298154716.png">
+                        <collision-poly>
+                            <point x="0.0928571" y="0.0902778" />
+                            <point x="0.5" y="0.00694444" />
+                            <point x="0.878571" y="0.118056" />
+                            <point x="0.921429" y="0.5" />
+                            <point x="0.842857" y="0.847222" />
+                            <point x="0.5" y="0.881944" />
+                            <point x="0.15" y="0.854167" />
+                            <point x="0.0571429" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="lock" pingpong="0" repeatcount="1" repeatto="0" sid="6136403747813788" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.503497" original-source="D:\bahan\Platformer\GUI\level select\Button_05.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite44" sid="2016215653814581">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9484701274424451" speed="5">
+                    <frame duration="1" hotspotX="0.500479" hotspotY="0.500479" original-source="D:\1568302169448.png">
+                        <collision-poly>
+                            <point x="0.177373" y="0.177373" />
+                            <point x="0.499521" y="0.131352" />
+                            <point x="0.813998" y="0.186002" />
+                            <point x="0.350911" y="0.350911" />
+                            <point x="0.499521" y="0.337488" />
+                            <point x="0.655801" y="0.344199" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite45" sid="9200619694350613">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8652055357798692" speed="5">
+                    <frame duration="1" hotspotX="0.500479" hotspotY="0.500479" original-source="D:\1568302182384.png">
+                        <collision-poly>
+                            <point x="0.499521" y="0.900288" />
+                            <point x="0.10163" y="0.89837" />
+                            <point x="0.499521" y="0.957814" />
+                            <point x="0.0383509" y="0.961649" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TiledBackground18" sid="6933341714705082">
+            <plugin id="TiledBg" />
+            <texture original-source="D:\bahan\Platformer\Abstract Platformer\PNG\extra\backgroundMenu.png" />
+        </object-type>
+        <object-type name="Sprite46" sid="2956449357829858">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1520651808891775" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Text6" sid="6204622742701199">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="TiledBackground19" sid="7175399446481792">
+            <plugin id="TiledBg" />
+            <texture />
+        </object-type>
+        <object-type name="Sprite47" sid="9988456784524147">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="306235731378031" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite48" sid="5956872869896691">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9551604382591829" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TiledBackground20" sid="5770347922950378">
+            <plugin id="TiledBg" />
+            <texture />
+        </object-type>
+        <object-type name="TiledBackground21" sid="5470522456695461">
+            <plugin id="TiledBg" />
+            <texture />
+        </object-type>
+        <object-type name="Sprite49" sid="6102450535047205">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="17913157962026" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="sandCenter" sid="8812108618493808">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8257492071469252" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\bahan\PNG\Ground\Sand\sandCenter.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TiledBackground22" sid="8172041682418455">
+            <plugin id="TiledBg" />
+            <texture original-source="D:\bahan\PNG\Ground\Sand\sandCenter.png" />
+        </object-type>
+        <object-type name="TiledBackground23" sid="7482551322566088">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="7746639204197386">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="D:\bahan\PNG\Ground\Sand\sandMid.png" />
+        </object-type>
+        <object-type name="Sprite50" sid="5978054574740468">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="5882705191517059">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4432419338956707" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\bahan\PNG\Ground\Sand\sandRight.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.5" y="0" />
+                            <point x="0.960938" y="0.0390625" />
+                            <point x="1" y="0.5" />
+                            <point x="0.96875" y="0.96875" />
+                            <point x="0.5" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite51" sid="1871723835948963">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="760439502281458">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9280137677614762" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\bahan\PNG\Ground\Sand\sandCliffAlt_left.png">
+                        <collision-poly>
+                            <point x="0.0390625" y="0.0390625" />
+                            <point x="0.5" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0.25" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite52" sid="8276971083045959">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="3191155595354119">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2562487404645952" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\bahan\PNG\Ground\Sand\sandCliffAlt_right.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.5" y="0" />
+                            <point x="0.96875" y="0.03125" />
+                            <point x="0.742188" y="0.5" />
+                            <point x="0.601563" y="0.601563" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite53" sid="2319281175248165">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="4557962521828192">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6164453013761874" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.855263" original-source="D:\bahan\PNG\Ground\Sand\sandHalf.png">
+                        <collision-poly>
+                            <point x="0.0384615" y="0.0657895" />
+                            <point x="0.5" y="0.0131579" />
+                            <point x="0.961538" y="0.0657895" />
+                            <point x="0.976923" y="0.855263" />
+                            <point x="0.569231" y="0.973684" />
+                            <point x="0.430769" y="0.973684" />
+                            <point x="0.0230769" y="0.855263" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ProgressBar" sid="1657617464647151">
+            <plugin id="progressbar" />
+        </object-type>
+        <object-type name="Sprite54" sid="210340880862206">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="694652460994477">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9611880105580037" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\bahan\PNG\Ground\Sand\sandLeft.png">
+                        <collision-poly>
+                            <point x="0.0390625" y="0.0390625" />
+                            <point x="0.5" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0.5" y="1" />
+                            <point x="0.03125" y="0.96875" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite55" sid="5580290082320971">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="2176146843875643">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="512215417763255" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\bahan\PNG\Ground\Sand\sand.png">
+                        <collision-poly>
+                            <point x="0.0390625" y="0.0390625" />
+                            <point x="0.5" y="0" />
+                            <point x="0.960938" y="0.0390625" />
+                            <point x="1" y="0.5" />
+                            <point x="0.96875" y="0.96875" />
+                            <point x="0.5" y="1" />
+                            <point x="0.03125" y="0.96875" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite56" sid="5619388601840649">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1643293930012994" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="boxCrate_double" sid="341607084933926">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="5378210713639481">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6689129203544216" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\bahan\PNG\Tiles\boxCrate_double.png">
+                        <collision-poly>
+                            <point x="0.03125" y="0.03125" />
+                            <point x="0.5" y="0" />
+                            <point x="0.96875" y="0.03125" />
+                            <point x="1" y="0.5" />
+                            <point x="0.96875" y="0.96875" />
+                            <point x="0.5" y="1" />
+                            <point x="0.03125" y="0.96875" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="bridgeA" sid="1323911195682931">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="3138555731850219">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="916882487725602" speed="5">
+                    <frame duration="1" hotspotX="0.503876" hotspotY="1.35417" original-source="D:\bahan\PNG\Tiles\bridgeA.png">
+                        <collision-poly>
+                            <point x="0.0542636" y="0.145833" />
+                            <point x="0.503876" y="0.0208333" />
+                            <point x="0.945736" y="0.166667" />
+                            <point x="0.302326" y="0.8125" />
+                            <point x="0.503876" y="0.979167" />
+                            <point x="0.697674" y="0.833333" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="barnacle" sid="2618096283171301">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="9498396124926142">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4197641005079134" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\bahan\PNG\Enemies\barnacle.png">
+                        <collision-poly>
+                            <point x="0.273438" y="0.273438" />
+                            <point x="0.5" y="0.34375" />
+                            <point x="0.726563" y="0.273438" />
+                            <point x="0.765625" y="0.5" />
+                            <point x="0.742188" y="0.742188" />
+                            <point x="0.5" y="1" />
+                            <point x="0.257813" y="0.742188" />
+                            <point x="0.234375" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\bahan\PNG\Enemies\barnacle_attack.png">
+                        <collision-poly>
+                            <point x="0.328125" y="0.328125" />
+                            <point x="0.5" y="0.195313" />
+                            <point x="0.671875" y="0.328125" />
+                            <point x="0.765625" y="0.5" />
+                            <point x="0.742188" y="0.742188" />
+                            <point x="0.5" y="1" />
+                            <point x="0.257813" y="0.742188" />
+                            <point x="0.234375" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="mati" pingpong="0" repeatcount="1" repeatto="0" sid="7842164285690933" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\bahan\PNG\Enemies\barnacle_dead.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite57" sid="9780355234974321">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="7229929272793156">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3104974497208005" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\bahan\PNG\Ground\Sand\sandHill_right.png">
+                        <collision-poly>
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0.015625" y="0.0546875" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TiledBackground24" sid="9148730554369764">
+            <plugin id="TiledBg" />
+            <texture original-source="D:\bahan\Platformer\Abstract Platformer\PNG\Backgrounds\set2_background.png" />
+        </object-type>
+        <object-type name="Sprite58" sid="948267544785282">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2525307369766967" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.500805" original-source="D:\bahan\Platformer\Abstract Platformer\PNG\Backgrounds\set2_tiles.png">
+                        <collision-poly>
+                            <point x="0.100352" y="0.183575" />
+                            <point x="0.5" y="0.041868" />
+                            <point x="0.757923" y="0.442834" />
+                            <point x="1" y="0.499195" />
+                            <point x="0.877641" y="0.776167" />
+                            <point x="0.5" y="0.644122" />
+                            <point x="0.0228873" y="0.958132" />
+                            <point x="0" y="0.499195" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TiledBackground25" sid="8976980468850843">
+            <plugin id="TiledBg" />
+            <texture original-source="D:\bahan\Platformer\Abstract Platformer\PNG\Backgrounds\set3_tiles.png" />
+        </object-type>
+        <object-type name="TiledBackground26" sid="3619840786064097">
+            <plugin id="TiledBg" />
+            <texture original-source="D:\bahan\Platformer\Abstract Platformer\PNG\Backgrounds\set3_hills.png" />
+        </object-type>
+        <object-type name="Sprite59" sid="2811289143906458">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3790933786482014" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\bahan\Platformer\Abstract Platformer\PNG\Tiles\Yellow tiles\tileYellow_04.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TiledBackground27" sid="1574561222143816">
+            <plugin id="TiledBg" />
+            <texture original-source="D:\bahan\Platformer\Abstract Platformer\PNG\Backgrounds\set2_tiles.png" />
+        </object-type>
+        <object-type name="TiledBackground28" sid="9780473705119498">
+            <plugin id="TiledBg" />
+            <texture original-source="D:\bahan\Platformer\Abstract Platformer\PNG\Backgrounds\set2_hills.png" />
+        </object-type>
+        <object-type name="TiledBackground29" sid="4900058201239151">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="4259804643225621">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="D:\bahan\Platformer\Abstract Platformer\PNG\Tiles\Yellow tiles\tileYellow_06.png" />
+        </object-type>
+        <object-type name="Sprite60" sid="63217650821902">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="2484790026678046">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5940977677944006" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\bahan\Platformer\Abstract Platformer\PNG\Tiles\Yellow tiles\tileYellow_07.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.5" y="0" />
+                            <point x="0.9375" y="0.0625" />
+                            <point x="1" y="0.5" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite61" sid="4111992479173244">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="8055379298047439">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7799205822621066" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\bahan\Platformer\Abstract Platformer\PNG\Tiles\Yellow tiles\tileYellow_05.png">
+                        <collision-poly>
+                            <point x="0.0625" y="0.0625" />
+                            <point x="0.5" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite62" sid="9002947532223755">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="1837190029150822">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3081915538737628" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\bahan\Platformer\Abstract Platformer\PNG\Tiles\Yellow tiles\tileYellow_16.png">
+                        <collision-poly>
+                            <point x="0.0625" y="0.0625" />
+                            <point x="0.5" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0.5" y="0.890625" />
+                            <point x="0.3125" y="0.6875" />
+                            <point x="0.25" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite63" sid="4781356058003026">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="3480400467308663">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8391422903452047" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\bahan\Platformer\Abstract Platformer\PNG\Tiles\Yellow tiles\tileYellow_17.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.5" y="0" />
+                            <point x="0.9375" y="0.0625" />
+                            <point x="0.75" y="0.5" />
+                            <point x="0.6875" y="0.6875" />
+                            <point x="0.5" y="0.875" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite64" sid="4975136231635424">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="9132524292199996">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7063974736355549" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\bahan\Platformer\Abstract Platformer\PNG\Tiles\Yellow tiles\tileYellow_08.png">
+                        <collision-poly>
+                            <point x="0.0625" y="0.0625" />
+                            <point x="0.5" y="0" />
+                            <point x="0.9375" y="0.0625" />
+                            <point x="1" y="0.5" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TiledBackground30" sid="9602620298073755">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="2197603289537335">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="D:\bahan\Platformer\Abstract Platformer\PNG\Tiles\Yellow tiles\tileYellow_08.png" />
+        </object-type>
+        <object-type name="TiledBackground31" sid="4553564352027759">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="2168411802824958">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="N:\!! BAHAN WORKSHOP GAME DEV\Construst 2\icon\kayu_bulat.png" />
+        </object-type>
+        <object-type name="Sprite65" sid="9616752661116906">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="7881016038356624">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9492334632399006" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\bahan\Platformer\Abstract Platformer\PNG\Tiles\Yellow tiles\tileYellow_25.png">
+                        <collision-poly>
+                            <point x="0.0625" y="0.0625" />
+                            <point x="0.5" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0.3125" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite66" sid="5207210161565385">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="9639995904811248">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1645797090293856" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\bahan\Platformer\Abstract Platformer\PNG\Tiles\Yellow tiles\tileYellow_26.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.5" y="0" />
+                            <point x="0.9375" y="0.0625" />
+                            <point x="0.6875" y="0.5" />
+                            <point x="0.578125" y="0.578125" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite67" sid="7488749259545615">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="1453952678253782">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1275508314884291" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\bahan\Platformer\Abstract Platformer\PNG\Tiles\Yellow tiles\tileYellow_19.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite68" sid="4561723332047392">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="6328309468168621">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="504389597364088" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\bahan\Platformer\Abstract Platformer\PNG\Tiles\Yellow tiles\tileYellow_10.png">
+                        <collision-poly>
+                            <point x="1" y="0.5" />
+                            <point x="1" y="1" />
+                            <point x="0.5" y="1" />
+                            <point x="0.5" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite69" sid="5423010406405009">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="8208383865278423">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3298866140543722" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\bahan\Platformer\Abstract Platformer\PNG\Tiles\Yellow tiles\tileYellow_20.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite70" sid="2505179099194894">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="4023575614771261">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1176821393233448" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\bahan\Platformer\Abstract Platformer\PNG\Tiles\Yellow tiles\tileYellow_11.png">
+                        <collision-poly>
+                            <point x="0.5" y="0.515625" />
+                            <point x="0.5" y="0.5" />
+                            <point x="0.5" y="0.5" />
+                            <point x="0.5" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TiledBackground32" sid="6196319642442134">
+            <plugin id="TiledBg" />
+            <texture original-source="D:\bahan\Platformer\Abstract Platformer\PNG\Backgrounds\set4_background.png" />
+        </object-type>
+        <object-type name="TiledBackground33" sid="9442809644656253">
+            <plugin id="TiledBg" />
+            <texture original-source="D:\bahan\Platformer\Abstract Platformer\PNG\Backgrounds\set1_tiles.png" />
+        </object-type>
+        <object-type name="TiledBackground34" sid="7192081268320693">
+            <plugin id="TiledBg" />
+            <texture original-source="D:\bahan\Platformer\Abstract Platformer\PNG\Backgrounds\set1_hills.png" />
+        </object-type>
+        <object-type name="Sprite71" sid="2543032327548018">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9722293602067525" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\bahan\PNG\Ground\Stone\stoneMid.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TiledBackground35" sid="9227433152069622">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="1281916568625954">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="D:\bahan\PNG\Ground\Grass\grassMid.png" />
+        </object-type>
+        <object-type name="Sprite72" sid="7599132736594499">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="9071725994079044">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="467704802941989" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\bahan\PNG\Ground\Grass\grassRight.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.5" y="0" />
+                            <point x="0.960938" y="0.0390625" />
+                            <point x="1" y="0.5" />
+                            <point x="0.96875" y="0.96875" />
+                            <point x="0.5" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite73" sid="8412950410861697">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="8656206708567225">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7505359758986779" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\bahan\PNG\Ground\Grass\grassCliffAlt_left.png">
+                        <collision-poly>
+                            <point x="0.0390625" y="0.0390625" />
+                            <point x="0.5" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0.25" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite74" sid="2463213361062212">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="5305352208114117">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="351583077262548" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\bahan\PNG\Ground\Grass\grassCliffAlt_right.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.5" y="0" />
+                            <point x="0.96875" y="0.03125" />
+                            <point x="0.75" y="0.5" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite75" sid="1056903228987497">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="3829595832805594">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4959190854852797" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\bahan\PNG\Ground\Grass\grassLeft.png">
+                        <collision-poly>
+                            <point x="0.0390625" y="0.0390625" />
+                            <point x="0.5" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0.5" y="1" />
+                            <point x="0.03125" y="0.96875" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite76" sid="5200100274584969">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="7939026271333477">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5660124185251458" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\bahan\PNG\Ground\Grass\grass.png">
+                        <collision-poly>
+                            <point x="0.0390625" y="0.0390625" />
+                            <point x="0.5" y="0" />
+                            <point x="0.960938" y="0.0390625" />
+                            <point x="1" y="0.5" />
+                            <point x="0.96875" y="0.96875" />
+                            <point x="0.5" y="1" />
+                            <point x="0.03125" y="0.96875" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite77" sid="1064225372673539">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="387045475941017">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7445905165174789" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.855263" original-source="D:\bahan\PNG\Ground\Grass\grassHalf.png">
+                        <collision-poly>
+                            <point x="0.0384615" y="0.0657895" />
+                            <point x="0.5" y="0.0131579" />
+                            <point x="0.961538" y="0.0657895" />
+                            <point x="0.976923" y="0.855263" />
+                            <point x="0.569231" y="0.973684" />
+                            <point x="0.430769" y="0.973684" />
+                            <point x="0.0230769" y="0.855263" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite78" sid="8677101079965957">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="1468466798989292">
+                    <behavior id="solid" />
+                </behavior-type>
+                <behavior-type name="Sine" sid="3652741976608151">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4129346215977826" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="-0.636364" original-source="N:\!! BAHAN WORKSHOP GAME DEV\Construst 2\icon\kayu_panjang.png">
+                        <collision-poly>
+                            <point x="0.708333" y="0.0454545" />
+                            <point x="0.291667" y="0.0454545" />
+                            <point x="0.958333" y="0.863636" />
+                            <point x="0.5" y="0.954545" />
+                            <point x="0.0416667" y="0.863636" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite79" sid="4682439508431568">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9489141531946675" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite80" sid="8138857027064559">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2056757677376751" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="fishBlue" sid="1832429639818345">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="8412484708170185">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3148613198163003" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\bahan\PNG\Enemies\fishBlue_fall.png">
+                        <collision-poly>
+                            <point x="0.367188" y="0.367188" />
+                            <point x="0.5" y="0.0859375" />
+                            <point x="0.648438" y="0.351563" />
+                            <point x="0.78125" y="0.5" />
+                            <point x="0.703125" y="0.703125" />
+                            <point x="0.5" y="0.921875" />
+                            <point x="0.265625" y="0.734375" />
+                            <point x="0.226563" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\bahan\PNG\Enemies\fishBlue.png">
+                        <collision-poly>
+                            <point x="0.265625" y="0.265625" />
+                            <point x="0.5" y="0.078125" />
+                            <point x="0.703125" y="0.296875" />
+                            <point x="0.78125" y="0.5" />
+                            <point x="0.65625" y="0.65625" />
+                            <point x="0.5" y="0.914063" />
+                            <point x="0.367188" y="0.632813" />
+                            <point x="0.234375" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="mati" pingpong="0" repeatcount="1" repeatto="0" sid="933193773096923" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\bahan\PNG\Enemies\fishBlue_dead.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="fly" sid="6338997094061165">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="1411990878190816">
+                    <behavior id="Sin" />
+                </behavior-type>
+                <behavior-type name="Sine2" sid="5968966757911946">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9280106231627428" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\bahan\PNG\Enemies\fly.png">
+                        <collision-poly>
+                            <point x="0.21875" y="0.21875" />
+                            <point x="0.5" y="0.40625" />
+                            <point x="0.773438" y="0.226563" />
+                            <point x="0.804688" y="0.5" />
+                            <point x="0.765625" y="0.765625" />
+                            <point x="0.5" y="0.796875" />
+                            <point x="0.234375" y="0.765625" />
+                            <point x="0.25" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\bahan\PNG\Enemies\fly_dead.png">
+                        <collision-poly>
+                            <point x="0.34375" y="0.34375" />
+                            <point x="0.5" y="0.351563" />
+                            <point x="0.671875" y="0.328125" />
+                            <point x="0.945313" y="0.5" />
+                            <point x="0.742188" y="0.742188" />
+                            <point x="0.5" y="0.757813" />
+                            <point x="0.265625" y="0.734375" />
+                            <point x="0.226563" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="mati" pingpong="0" repeatcount="1" repeatto="0" sid="442565041355762" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\bahan\PNG\Enemies\fly_move.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="frog" sid="2347328799962392">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="401808294563176" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\bahan\PNG\Enemies\frog.png">
+                        <collision-poly>
+                            <point x="0.453125" y="0.453125" />
+                            <point x="0.5" y="0.460938" />
+                            <point x="0.53125" y="0.46875" />
+                            <point x="0.585938" y="0.5" />
+                            <point x="0.835938" y="0.835938" />
+                            <point x="0.5" y="0.992188" />
+                            <point x="0.164063" y="0.835938" />
+                            <point x="0.3125" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\bahan\PNG\Enemies\frog_move.png">
+                        <collision-poly>
+                            <point x="0.257813" y="0.257813" />
+                            <point x="0.5" y="0.34375" />
+                            <point x="0.601563" y="0.398438" />
+                            <point x="0.921875" y="0.921875" />
+                            <point x="0.5" y="0.796875" />
+                            <point x="0.203125" y="0.796875" />
+                            <point x="0.078125" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="mati" pingpong="0" repeatcount="1" repeatto="0" sid="6858323227428397" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\bahan\PNG\Enemies\frog_dead.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite81" sid="7754870987376211">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5965723936428814" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite82" sid="7687077919448029">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8939912121347855" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\bahan\Platformer\GUI\gui\button\Button_20.png" />
+                    <frame duration="1" hotspotX="0.505376" hotspotY="0.5" original-source="D:\bahan\Platformer\GUI\gui\button\Button_17.png">
+                        <collision-poly>
+                            <point x="0.0752688" y="0.0729167" />
+                            <point x="0.494624" y="0.0104167" />
+                            <point x="0.903226" y="0.09375" />
+                            <point x="0.967742" y="0.5" />
+                            <point x="0.892473" y="0.895833" />
+                            <point x="0.494624" y="0.947917" />
+                            <point x="0.0967742" y="0.90625" />
+                            <point x="0.0107527" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TiledBackground36" sid="8673052382632395">
+            <plugin id="TiledBg" />
+            <texture original-source="D:\bahan\Platformer\Abstract Platformer\PNG\extra\backgroundMenu.png" />
+        </object-type>
+        <object-type name="Sprite83" sid="365834216413394">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2389635132359889" speed="5">
+                    <frame duration="1" hotspotX="0.500829" hotspotY="0.501035" original-source="D:\bahan\Platformer\GUI\gui\widow\Window - Copy_06.png">
+                        <collision-poly>
+                            <point x="0.0945274" y="0.118012" />
+                            <point x="0.499171" y="0" />
+                            <point x="0.905473" y="0.118012" />
+                            <point x="0.99005" y="0.498965" />
+                            <point x="0.980099" y="0.975155" />
+                            <point x="0.0149254" y="0.981366" />
+                            <point x="0" y="0.498965" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite84" sid="6397192575752913">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9959405408894706" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\bahan\Platformer\GUI\gui\widow\Window - Copy_21.png">
+                        <collision-poly>
+                            <point x="0.0376344" y="0.184211" />
+                            <point x="0.5" y="0.157895" />
+                            <point x="0.989247" y="0.0526316" />
+                            <point x="0.978495" y="0.894737" />
+                            <point x="0.5" y="0.526316" />
+                            <point x="0.0322581" y="0.842105" />
+                            <point x="0.0215054" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Text7" sid="9425367964999418">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Sprite85" sid="6012255277245617">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="45300511226755" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite86" sid="1206251154288863">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3593172931118286" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.504762" original-source="D:\bahan\Platformer\GUI\gui\widow\Window - Copy_47.png">
+                        <collision-poly>
+                            <point x="0.5" y="0.00952381" />
+                            <point x="0.962264" y="0.495238" />
+                            <point x="0.839623" y="0.838095" />
+                            <point x="0.5" y="0.885714" />
+                            <point x="0.169811" y="0.828571" />
+                            <point x="0.0377358" y="0.495238" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="WindowCopy_4" sid="3202835951216496">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="type" sid="2892790243122644" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3333188067435608" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.506024" original-source="D:\bahan\Platformer\GUI\gui\widow\Window - Copy_68.png">
+                        <collision-poly>
+                            <point x="0.244186" y="0.253012" />
+                            <point x="0.5" y="0.0120482" />
+                            <point x="0.755814" y="0.253012" />
+                            <point x="0.918605" y="0.493976" />
+                            <point x="0.837209" y="0.831325" />
+                            <point x="0.5" y="0.843373" />
+                            <point x="0.162791" y="0.831325" />
+                            <point x="0.0813954" y="0.493976" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.504762" original-source="D:\bahan\Platformer\GUI\gui\widow\Window - Copy_47.png">
+                        <collision-poly>
+                            <point x="0.5" y="0.00952381" />
+                            <point x="0.962264" y="0.495238" />
+                            <point x="0.839623" y="0.838095" />
+                            <point x="0.5" y="0.885714" />
+                            <point x="0.169811" y="0.828571" />
+                            <point x="0.0377358" y="0.495238" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>Layout 4.xml</layout>
+        <layout>Layout 5.xml</layout>
+        <layout>Layout 1.xml</layout>
+        <layout>level1.xml</layout>
+        <layout>level2.xml</layout>
+        <layout>level3.xml</layout>
+        <layout>level4.xml</layout>
+        <layout>level5.xml</layout>
+        <layout>level6.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>Event sheet 1.xml</event-sheet>
+        <event-sheet>Event sheet 2.xml</event-sheet>
+        <event-sheet>Event sheet 3.xml</event-sheet>
+        <event-sheet>Menu Level.xml</event-sheet>
+        <event-sheet>level.xml</event-sheet>
+        <event-sheet>Event sheet 4.xml</event-sheet>
+        <event-sheet>Event sheet 5.xml</event-sheet>
+        <event-sheet>Event sheet 6.xml</event-sheet>
+        <event-sheet>Event sheet 7.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Touch" uid="18">
+            <properties>
+                <use-mouse-input>Yes</use-mouse-input>
+            </properties>
+        </global-instance>
+        <global-instance type="Audio" uid="105">
+            <properties>
+                <timescale-audio>Off</timescale-audio>
+                <saveload>All</saveload>
+                <play-in-background>No</play-in-background>
+                <positioned-audio></positioned-audio>
+                <panning-model>HRTF</panning-model>
+                <distance-model>Inverse</distance-model>
+                <listener-z-height>600</listener-z-height>
+                <reference-distance>600</reference-distance>
+                <maximum-distance>10000</maximum-distance>
+                <roll-off-factor>1</roll-off-factor>
+            </properties>
+        </global-instance>
+        <global-instance type="Function" uid="112" />
+    </global-instances>
+    <sounds-folder />
+    <music-folder>
+        <file name="click.m4a" />
+        <file name="click.ogg" />
+        <file name="Collect Gem.m4a" />
+        <file name="Collect Gem.ogg" />
+        <file name="Collect Key.m4a" />
+        <file name="Collect Key.ogg" />
+        <file name="EnemyHit.m4a" />
+        <file name="EnemyHit.ogg" />
+        <file name="Hit.m4a" />
+        <file name="Hit.ogg" />
+        <file name="Jingle Lose.m4a" />
+        <file name="Jingle Lose.ogg" />
+        <file name="Jingle Win.m4a" />
+        <file name="Jingle Win.ogg" />
+        <file name="MattOglseby - 1.m4a" />
+        <file name="MattOglseby - 1.ogg" />
+    </music-folder>
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>
